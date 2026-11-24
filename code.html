@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CODE | Gents Wedding Collection · Malappuram</title>
+  <meta name="description" content="Malappuram's premier destination for bespoke groom sherwanis, designer wedding suits, crystal tuxedos, and coordinated groomsmen ensembles. Located at Varangode, Kizhakkethala.">
+  <meta name="keywords" content="CODE Malappuram, gents wedding collection Malappuram, wedding suits Malappuram, sherwani Malappuram, groom tuxedo Kerala, groomsmen suits">
+
+  <!-- Open Graph / Meta for Social & WhatsApp Sharing -->
+  <meta property="og:title" content="CODE | Gents Wedding Collection · Malappuram">
+  <meta property="og:description" content="Where Malappuram grooms get dressed in distinction. Bespoke sherwanis, crystal tuxedos, and coordinated wedding party ensembles.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS with Forms & Container Queries -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              goldDark: '#AA820A',
+              dark: '#0A0A0C',
+              card: '#121217',
+              cardHover: '#181820',
+              border: '#24242C'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #0A0A0C;
+      color: #E6E2D8;
+      overflow-x: hidden;
+    }
+    .font-serif-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F9E7B9 0%, #D4AF37 50%, #B8860B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #F9E7B9 0%, #D4AF37 50%, #B8860B 100%);
+    }
+    .perspective-card {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+    }
+    .perspective-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px -10px rgba(212, 175, 55, 0.2);
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .accordion-item.active .accordion-content {
+      max-height: 400px;
+    }
+    .accordion-item.active .accordion-icon {
+      transform: rotate(180deg);
+    }
+    .tab-btn.active-tab {
+      background-color: #D4AF37;
+      color: #0A0A0C;
+      border-color: #D4AF37;
+      font-weight: 700;
+    }
+    @keyframes pulseWa {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .wa-pulse {
+      animation: pulseWa 2.2s infinite;
+    }
+    /* Subtle custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A0A0C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #282834;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+  </style>
+</head>
+<body class="bg-[#0A0A0C] text-[#E6E2D8] antialiased selection:bg-[#D4AF37] selection:text-black">
+
+  <!-- TOP ANNOUNCEMENT / CLIENT PITCH BANNER -->
+  <div class="bg-gradient-to-r from-[#181824] via-[#211E16] to-[#181824] border-b border-[#D4AF37]/30 py-2 px-4 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded bg-[#D4AF37]/20 text-[#D4AF37] text-[10px] font-bold tracking-widest uppercase">Kerala Wedding Season 2026</span>
+        <span class="text-[#D1CCC2] hidden sm:inline">Now Booking Nikah &amp; Reception Groom Trials · Kizhakkethala, Malappuram</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <!-- Live Store Status Trigger -->
+        <button onclick="toggleHoursModal()" class="flex items-center gap-1.5 text-[11px] text-[#A6A299] hover:text-[#D4AF37] transition-colors cursor-pointer">
+          <span id="liveStatusDot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="liveStatusText" class="font-medium text-white">Open Now · 9:30 AM – 10:00 PM</span>
+        </button>
+        <span class="text-[#444] hidden md:inline">|</span>
+        <!-- Pitch Presentation Mode Pill for Store Owner Demo -->
+        <button onclick="openPitchModal()" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#D4AF37]/15 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-black border border-[#D4AF37]/40 text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer">
+          <span>💼 Business ROI &amp; Pitch View</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-[#0C0C0F]/95 backdrop-blur-md border-b border-[#222228]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      <a class="flex items-center space-x-3 group" href="#home" onclick="scrollToSection('home', event)">
+        <div class="w-11 h-11 rounded-full bg-[#18181F] border border-[#D4AF37]/50 p-1 flex items-center justify-center group-hover:border-[#D4AF37] transition-colors shadow-lg">
+          <img alt="CODE Gents Wedding Collection" class="w-9 h-9 object-contain invert brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJam-vx4xlP98XE2YkB-RKLglVLYKAPHzJF-M3MkTdknBepNf4gpdY0S1NfX0y3HhTB_Eng-qdjOYZMay60KmCgMIIVfFOuC50GQSxVfNucaybJljIM0S3TO_eZdP_nZLMP_8FooUhULxTDeNyxi0nYG5VKIRGxHaCswUPADJeAC9_VLHzIUtfcQZd8f5yAi9oAPEG9lGns-SYkRnvjoGDzTHMnj_N4RSuQds19EIzIOwbfMTHzTC28A">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif-cormorant text-2xl font-bold tracking-wider text-white leading-none">CODE</span>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37] font-semibold mt-0.5">Gents Wedding Collection</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-semibold uppercase tracking-widest text-[#B5B0A4]">
+        <a class="hover:text-[#D4AF37] transition-colors" href="#home" onclick="scrollToSection('home', event)">Home</a>
+        <a class="hover:text-[#D4AF37] transition-colors" href="#spotlight" onclick="scrollToSection('spotlight', event)">Showcase</a>
+        <a class="hover:text-[#D4AF37] transition-colors" href="#collections" onclick="scrollToSection('collections', event)">Collections</a>
+        <a class="hover:text-[#D4AF37] transition-colors text-[#D4AF37]" href="#calculator" onclick="scrollToSection('calculator', event)">Entourage Calculator</a>
+        <a class="hover:text-[#D4AF37] transition-colors" href="#nri-concierge" onclick="scrollToSection('nri-concierge', event)">NRI Grooms</a>
+        <a class="hover:text-[#D4AF37] transition-colors" href="#boutique" onclick="scrollToSection('boutique', event)">Store &amp; Map</a>
+        <a class="hover:text-[#D4AF37] transition-colors" href="#faq" onclick="scrollToSection('faq', event)">FAQ</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="flex items-center gap-3">
+        <!-- Interactive Style Finder Quiz Button -->
+        <button onclick="openQuizModal()" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded bg-[#181822] hover:bg-[#20202E] border border-[#D4AF37]/50 text-[#D4AF37] hover:text-white text-[11px] font-bold tracking-wider uppercase transition-all cursor-pointer">
+          <span>✦ Look Finder</span>
+        </button>
+        <!-- Enquire WhatsApp Button -->
+        <a href="https://wa.me/917907939090?text=Hi%20CODE%20Gents%20Wedding%20Collection%2C%20I%20would%20like%20to%20enquire%20about%20wedding%20attire%20and%20groom%20fitting." target="_blank" rel="noopener noreferrer" class="bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] text-[11px] font-bold tracking-widest uppercase px-5 py-2.5 rounded transition-all shadow-md inline-flex items-center gap-2">
+          <span>Enquire Now</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 px-6 lg:px-12 bg-gradient-to-b from-[#111116] via-[#0A0A0C] to-[#0A0A0C] border-b border-[#1E1E26]" id="home">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Text (Left 7 cols) -->
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#181820] border border-[#D4AF37]/40 mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-pulse"></span>
+          <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] uppercase text-[#D4AF37]">
+            KIZHAKKETHALA, MALAPPURAM · BESPOKE GROOM CENTRE
+          </span>
+        </div>
+        <h1 class="font-serif-cormorant text-5xl sm:text-6xl md:text-7xl leading-[1.05] text-white font-semibold tracking-tight">
+          Where Malappuram grooms get <br class="hidden sm:inline">
+          dressed in <span class="italic font-normal text-gold-gradient">distinction.</span>
+        </h1>
+        <p class="text-[10px] sm:text-[11px] font-bold tracking-[0.2em] uppercase text-[#A9A49A] mt-5">
+          BESPOKE GROOM SHERWANIS · DESIGNER TUXEDOS · INDO-WESTERN · GROOMSMEN ENSEMBLES
+        </p>
+        <p class="mt-5 text-base sm:text-lg text-[#BCB7AC] max-w-xl font-normal leading-relaxed">
+          From regal hand-embroidered wedding sherwanis and bespoke crystal tuxedos to synchronized wedding entourage ensembles, CODE crafts every detail for your most unforgettable day in Kerala.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="mt-8 flex flex-wrap gap-4 items-center">
+          <a href="#collections" onclick="scrollToSection('collections', event)" class="inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] text-[11px] tracking-widest font-bold uppercase px-8 py-4 rounded transition-all shadow-lg hover:shadow-gold cursor-pointer">
+            <span>EXPLORE CODE'S COLLECTIONS</span>
+            <span>→</span>
+          </a>
+          <button onclick="openQuizModal()" class="inline-flex items-center gap-2 border border-[#3A3944] hover:border-[#D4AF37] text-white hover:text-[#D4AF37] text-[11px] tracking-widest font-semibold uppercase px-7 py-4 rounded bg-[#131318] hover:bg-[#181822] transition-all cursor-pointer">
+            <span>✦ FIND YOUR WEDDING LOOK (QUIZ)</span>
+          </button>
+          <a class="inline-flex items-center gap-2 text-[#C5C0B4] hover:text-[#D4AF37] text-[11px] tracking-widest font-semibold uppercase py-3 px-2 transition-all cursor-pointer" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 text-[#D4AF37]" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+            </svg>
+            <span>VISIT VARANGODE STORE</span>
+          </a>
+        </div>
+
+        <!-- Trust Highlights -->
+        <div class="mt-10 pt-8 border-t border-[#202028] flex flex-wrap gap-6 sm:gap-10 text-[11px] text-[#A6A299]">
+          <div class="flex items-center gap-2">
+            <span class="text-[#D4AF37]">✦</span>
+            <span>Bespoke Fitting &amp; Master Stitching</span>
+          </div>
+          <div class="flex items-center gap-2 cursor-pointer hover:text-white transition-colors" onclick="toggleHoursModal()">
+            <span class="text-[#D4AF37]">✦</span>
+            <span class="underline decoration-[#D4AF37]/40 underline-offset-4">Open Daily 9:30 AM – 10:00 PM</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-[#D4AF37]">✦</span>
+            <span>Varangode, Malappuram</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (Right 5 cols) -->
+      <div class="lg:col-span-5 relative">
+        <div class="perspective-card relative rounded-2xl overflow-hidden border border-[#D4AF37]/40 bg-[#16161D] p-2 shadow-2xl cursor-pointer group" onclick="openQuickView('The Grand Entourage &amp; Wedding Party', 'Real Malappuram Weddings · Exclusive Collection', 'The complete CODE wedding experience: groom in an ivory white embellished tuxedo alongside bride in regal crimson lehenga and stylish coordinated wedding groomsmen.', 'Pure Handloom Silk &amp; Micro Zardozi Details', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCH-4pitVmg-I53_190Gglsu8y0kVFgsCh-G5BbFCMIfFwPsAQNK_bc4ow61NcAMuZN4XFUJ9ddmmCCaqej5WZe1xP5Hp7CI-yEa7s8g4L0N4u04Dm2cetWnzLTlXTsKVJLEQBeZP22QwvvTC8iOF-ZxdBL_mNdj4EkFI6GGsth8EAV2N9R6Ti3JkFUMKNPQX3jxIMPBHWC4n4GtEqBpzgqG-GFYCdj8c25iN-Da3SL22kzEJ47tG7LfQ')">
+          <div class="relative overflow-hidden rounded-xl aspect-[4/5]">
+            <img alt="Real Wedding Party and Groomsmen - CODE Malappuram" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH-4pitVmg-I53_190Gglsu8y0kVFgsCh-G5BbFCMIfFwPsAQNK_bc4ow61NcAMuZN4XFUJ9ddmmCCaqej5WZe1xP5Hp7CI-yEa7s8g4L0N4u04Dm2cetWnzLTlXTsKVJLEQBeZP22QwvvTC8iOF-ZxdBL_mNdj4EkFI6GGsth8EAV2N9R6Ti3JkFUMKNPQX3jxIMPBHWC4n4GtEqBpzgqG-GFYCdj8c25iN-Da3SL22kzEJ47tG7LfQ">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-transparent to-transparent opacity-80"></div>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-[#0C0C10]/85 border border-[#D4AF37]/50 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider backdrop-blur-sm">
+                Real Wedding Story
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#0F0F14]/90 backdrop-blur-md border border-[#D4AF37]/40 flex items-center justify-between">
+              <div>
+                <p class="text-[9px] uppercase tracking-[0.2em] text-[#D4AF37] font-bold">Real Malappuram Weddings</p>
+                <h3 class="font-serif-cormorant text-xl text-white font-semibold">The Grand Wedding Party</h3>
+                <p class="text-[11px] text-[#A6A196]">Bespoke White Jacket &amp; Coordinated Entourage</p>
+              </div>
+              <span class="w-9 h-9 rounded-full bg-[#D4AF37] flex items-center justify-center text-[#0A0A0C] font-bold text-sm">↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER BAR -->
+  <section class="border-b border-[#22222A] bg-[#0E0E12] py-4">
+    <div class="max-w-7xl mx-auto px-6 overflow-x-auto">
+      <div class="flex items-center justify-between min-w-[900px] text-xs font-semibold tracking-wider text-[#CFCBC0] uppercase">
+        <span class="flex items-center gap-3 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="scrollToSection('collections', event); filterCollection('sherwanis');">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span class="font-serif-cormorant text-base capitalize tracking-normal text-white font-medium">Bespoke Sherwanis</span>
+        </span>
+        <span class="flex items-center gap-3 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="scrollToSection('collections', event); filterCollection('tuxedos');">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span class="font-serif-cormorant text-base capitalize tracking-normal text-white font-medium">Designer Tuxedos &amp; Blazers</span>
+        </span>
+        <span class="flex items-center gap-3 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="scrollToSection('collections', event); filterCollection('indo-western');">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span class="font-serif-cormorant text-base capitalize tracking-normal text-white font-medium">Indo-Western &amp; Bandhgalas</span>
+        </span>
+        <span class="flex items-center gap-3 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="scrollToSection('calculator', event)">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span class="font-serif-cormorant text-base capitalize tracking-normal text-[#D4AF37] font-medium">Entourage Sets (3-12 Pax)</span>
+        </span>
+        <span class="flex items-center gap-3 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="scrollToSection('craft', event)">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span class="font-serif-cormorant text-base capitalize tracking-normal text-white font-medium">24h Alteration Guarantee</span>
+        </span>
+        <span class="flex items-center gap-3 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="scrollToSection('boutique', event)">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span class="font-serif-cormorant text-base capitalize tracking-normal text-[#D4AF37] font-medium">Varangode, Malappuram</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE / SPOTLIGHT (EDITORIAL BENTO GRID) -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#0B0B0E] border-b border-[#222228]" id="spotlight">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#D4AF37] block mb-2">Exquisite Craftsmanship</span>
+        <h2 class="font-serif-cormorant text-4xl sm:text-5xl lg:text-6xl font-semibold text-white">
+          Curated for the grandest <span class="italic font-normal text-gold-gradient">moments.</span>
+        </h2>
+        <p class="text-sm sm:text-base text-[#9E9A90] mt-4 leading-relaxed">
+          Every groom deserves attire that radiates authority, grace, and unmatched personal elegance. Step into CODE to experience precision fittings and luxury handlooms.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Left: Royal Ivory Floral Embroidered Tuxedo (Image 8) -->
+        <div class="lg:col-span-5">
+          <div class="group relative h-full rounded-2xl overflow-hidden border border-[#D4AF37]/40 bg-[#141419] shadow-2xl flex flex-col justify-end p-6 sm:p-8 min-h-[520px] cursor-pointer" onclick="openQuickView('Royal Ivory Floral Embroidered Tuxedo', 'Signature Handcrafted Wedding Tuxedo', 'Hand-stitched floral zardozi bullion thread work along structured shoulders, pure ivory lapels, and tailored flare trousers. Crafted for grand outdoor garden celebrations.', 'Pure Raw Silk with Tonal Resham &amp; Gold Needlework', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAtjFX7aZZG1t3aWvHx9xmkkkrjvz8wN1xzaQ0Wn-Jcsz637vTtbL-WnWSBOOMsvFMZteggz47hJKso4_cd2ZNVMWpz94N9xseSuL8-IyeE7sB5nJvHeI0uXzUbaINA2P2ju77x7BNnBhfA3hA-DQC08tcjwSAu4_E2kSZ-MtB-92J-G3BBrU81idZmYdtLRzAhK1xjXwx9bz8si8f9GcuYQNrECQPBBGcS2PgYdbWJK6QdYsGNJLV9pg')">
+            <img alt="Royal Ivory Floral Embroidered Groom Tuxedo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtjFX7aZZG1t3aWvHx9xmkkkrjvz8wN1xzaQ0Wn-Jcsz637vTtbL-WnWSBOOMsvFMZteggz47hJKso4_cd2ZNVMWpz94N9xseSuL8-IyeE7sB5nJvHeI0uXzUbaINA2P2ju77x7BNnBhfA3hA-DQC08tcjwSAu4_E2kSZ-MtB-92J-G3BBrU81idZmYdtLRzAhK1xjXwx9bz8si8f9GcuYQNrECQPBBGcS2PgYdbWJK6QdYsGNJLV9pg">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0C] via-[#0A0A0C]/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="px-3 py-1 rounded bg-[#D4AF37] text-black text-[10px] font-bold tracking-widest uppercase inline-block mb-3">Signature Edition</span>
+              <h3 class="font-serif-cormorant text-3xl font-semibold text-white mb-2">Royal Ivory Embroidered Tuxedo</h3>
+              <p class="text-xs text-[#D1CCC2] leading-relaxed mb-4">
+                Hand-detailed floral embroidery on pristine ivory canvas, bespoke tailored cut, paired with sharp evening trousers.
+              </p>
+              <div class="flex items-center gap-4">
+                <button class="inline-flex items-center gap-2 text-xs font-bold tracking-wider text-[#D4AF37] hover:text-white uppercase transition-colors" onclick="event.stopPropagation(); openBookingModal('Fitting for: Royal Ivory Embroidered Tuxedo')">
+                  <span>Book Personal Fitting</span>
+                  <span>→</span>
+                </button>
+                <span class="text-xs text-[#777]">|</span>
+                <span class="text-xs text-emerald-400 font-semibold">Available for Trial in Store</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3 Showcase Items -->
+        <div class="lg:col-span-7 flex flex-col justify-between gap-8">
+          <!-- Top: Macro Bowtie & Crystal Tuxedo Craftsmanship (Image 11) -->
+          <div class="rounded-2xl overflow-hidden border border-[#282834] bg-[#14141A] p-6 group hover:border-[#D4AF37]/50 transition-all cursor-pointer" onclick="openQuickView('Crystal Linear Embroidered Tuxedo &amp; Bow Tie', 'Haute Horlogerie &amp; Bespoke Tailoring', 'Impeccable macro needlework featuring hand-beaded crystal linear stripes across black silk lapels with a bespoke embellished bowtie and tailored waistcoat.', 'Super 150s Black Wool &amp; Micro Crystal Seed Beads', 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-fT4Y8SN0jixaM3VAJnWDTXkbvlLJ1Ay4-U23ii-Gs8COW8Rrh6j1wSyKeczjOckZwfxfULR0jw6oB3AMIZywqrkWYBMqTJ_z264oiKvwmqMiXpAGmy-xS1-hxiJw6dM3P8t_XDL9gVfp_wvjZLYmvQ5zJLcqWU_te97tJsUjIBWOT1i7vJAfxu9CqKER-4YtHeNEoFLOtwIzeey9QW55TChgVoCLHvTCXynaFKuGBx6sFFalKLoV3A')">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+              <div class="sm:col-span-7 overflow-hidden rounded-xl aspect-[16/10]">
+                <img alt="Detailed Hand-Embroidered Tuxedo Bowtie Craftsmanship" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-fT4Y8SN0jixaM3VAJnWDTXkbvlLJ1Ay4-U23ii-Gs8COW8Rrh6j1wSyKeczjOckZwfxfULR0jw6oB3AMIZywqrkWYBMqTJ_z264oiKvwmqMiXpAGmy-xS1-hxiJw6dM3P8t_XDL9gVfp_wvjZLYmvQ5zJLcqWU_te97tJsUjIBWOT1i7vJAfxu9CqKER-4YtHeNEoFLOtwIzeey9QW55TChgVoCLHvTCXynaFKuGBx6sFFalKLoV3A">
+              </div>
+              <div class="sm:col-span-5 space-y-3">
+                <span class="text-[10px] font-bold tracking-[0.2em] text-[#D4AF37] uppercase">Master Atelier Detail</span>
+                <h4 class="font-serif-cormorant text-2xl font-semibold text-white">Crystal Lineage Tuxedos</h4>
+                <p class="text-xs text-[#A19D94] leading-relaxed">
+                  Precision hand-beaded crystal pinstripes with synchronized luxury accessories and silk lapels.
+                </p>
+                <div class="pt-2">
+                  <span class="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-widest text-[#D4AF37] uppercase group-hover:underline">
+                    <span>Explore Masterwork</span>
+                    <span>↗</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom: Lilac Belted Suit & Emerald Velvet Blazer (Images 4 & 14) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="rounded-2xl overflow-hidden border border-[#282834] bg-[#14141A] p-5 group hover:border-[#D4AF37]/50 transition-all flex flex-col justify-between cursor-pointer" onclick="openQuickView('Modern Mauve Belt-Tied Designer Suit', 'Avant-Garde Groom &amp; Cocktail Wear', 'Contemporary lilac tailored suit with sash belted closure, wide lapels, and flowy tailored trousers crafted for modern high-fashion receptions.', 'Italian Tropical Viscose Wool Blend', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoIctUHzDD7VCyBapK389a5ajVl6M-iZwRg00wJ5J7Dg2k4SSuNyCr9dUBzlgC4zZT749sOztGMhzC3bpag3NsdvN0-DVuiIssPDKYavAKpg8WAJYB2MOAHud6dcxoB8YioJOkcKrhf02nSY4avuQErzOUibFND9PD_oYYeRDm2Yqn10OAWIwgLbzvNsCjEEXKK3Orj4WcTcXt48b0MyVpQtOKvPahpgelii7hMNVARFdNtsyRRkouqw')">
+              <div class="overflow-hidden rounded-xl aspect-[4/5] mb-4">
+                <img alt="Lilac Belted Modern Suit - CODE Malappuram" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoIctUHzDD7VCyBapK389a5ajVl6M-iZwRg00wJ5J7Dg2k4SSuNyCr9dUBzlgC4zZT749sOztGMhzC3bpag3NsdvN0-DVuiIssPDKYavAKpg8WAJYB2MOAHud6dcxoB8YioJOkcKrhf02nSY4avuQErzOUibFND9PD_oYYeRDm2Yqn10OAWIwgLbzvNsCjEEXKK3Orj4WcTcXt48b0MyVpQtOKvPahpgelii7hMNVARFdNtsyRRkouqw">
+              </div>
+              <div>
+                <span class="text-[10px] font-bold tracking-[0.2em] text-[#D4AF37] uppercase">Contemporary Trend</span>
+                <h5 class="font-serif-cormorant text-xl font-semibold text-white mt-1">Mauve Belted Designer Suit</h5>
+                <p class="text-xs text-[#9B978F] mt-1">Avant-garde sash closure with modern relaxed drape.</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl overflow-hidden border border-[#282834] bg-[#14141A] p-5 group hover:border-[#D4AF37]/50 transition-all flex flex-col justify-between cursor-pointer" onclick="openQuickView('Dark Green Velvet Double-Breasted Suit', 'Regal Evening &amp; Reception Blazer', 'Lush bottle-green velvet jacket paired with crisp ivory flared trousers. Double breasted mother-of-pearl buttoning for an unforgettable aura.', 'Plush Velvet with Japanese Cupro Silk Lining', 'https://lh3.googleusercontent.com/aida-public/AB6AXuA9HaUOxdmeY_84UScV40W9iHplbew8Bx0VBW7cpIlJw-vU0KJbRQPBnQWsXjKlETSZEuNsOHDXXilznDsWiSIafGzPRYrIH8FcObXWHhRJBqKrxHtLRbvGGemoPZPtySgmI9MfjycJQvCYKlQZdCpw9Tn1Y2ckhb8nsNPA9dw3Tf4MfsftLqSG5zxACI9n9YtA8zAQKspZC-UX0x_utKX9KP6XPuuP49zcfn5WRmRSnyqI8Bude5ewyQ')">
+              <div class="overflow-hidden rounded-xl aspect-[4/5] mb-4">
+                <img alt="Bottle Green Velvet Blazer with Flared Trousers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9HaUOxdmeY_84UScV40W9iHplbew8Bx0VBW7cpIlJw-vU0KJbRQPBnQWsXjKlETSZEuNsOHDXXilznDsWiSIafGzPRYrIH8FcObXWHhRJBqKrxHtLRbvGGemoPZPtySgmI9MfjycJQvCYKlQZdCpw9Tn1Y2ckhb8nsNPA9dw3Tf4MfsftLqSG5zxACI9n9YtA8zAQKspZC-UX0x_utKX9KP6XPuuP49zcfn5WRmRSnyqI8Bude5ewyQ">
+              </div>
+              <div>
+                <span class="text-[10px] font-bold tracking-[0.2em] text-[#D4AF37] uppercase">Velvet Edition</span>
+                <h5 class="font-serif-cormorant text-xl font-semibold text-white mt-1">Bottle Green Velvet Blazer</h5>
+                <p class="text-xs text-[#9B978F] mt-1">Regal double-breasted cut with ivory flared pants.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS SECTION -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#09090C] border-b border-[#222228]" id="collections">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <div>
+          <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#D4AF37] block mb-2">CODE Collections</span>
+          <h2 class="font-serif-cormorant text-3xl sm:text-4xl md:text-5xl font-semibold text-white">
+            Crafted for the modern <span class="italic font-normal text-gold-gradient">groom.</span>
+          </h2>
+        </div>
+        <div class="mt-4 md:mt-0 flex items-center gap-3">
+          <button class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest px-5 py-3 rounded bg-[#16161E] border border-[#D4AF37]/50 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all cursor-pointer" onclick="requestLookbook()">
+            <span>Request Full Lookbook (PDF)</span>
+            <span>↓</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center gap-2.5 pb-8 border-b border-[#1E1E26] mb-10" id="collection-tabs">
+        <button class="tab-btn active-tab px-4 py-2 rounded-full border border-[#2D2D36] text-[11px] uppercase tracking-wider font-semibold cursor-pointer transition-all" onclick="filterCollection('all', this)">All Collections</button>
+        <button class="tab-btn px-4 py-2 rounded-full bg-[#131317] border border-[#2D2D36] text-[#A6A299] text-[11px] uppercase tracking-wider font-semibold cursor-pointer transition-all hover:text-white" onclick="filterCollection('sherwanis', this)">Sherwanis &amp; Bandhgalas</button>
+        <button class="tab-btn px-4 py-2 rounded-full bg-[#131317] border border-[#2D2D36] text-[#A6A299] text-[11px] uppercase tracking-wider font-semibold cursor-pointer transition-all hover:text-white" onclick="filterCollection('tuxedos', this)">Designer Tuxedos &amp; Suits</button>
+        <button class="tab-btn px-4 py-2 rounded-full bg-[#131317] border border-[#2D2D36] text-[#A6A299] text-[11px] uppercase tracking-wider font-semibold cursor-pointer transition-all hover:text-white" onclick="filterCollection('indo-western', this)">Indo-Western &amp; Velvet</button>
+        <button class="tab-btn px-4 py-2 rounded-full bg-[#131317] border border-[#2D2D36] text-[#A6A299] text-[11px] uppercase tracking-wider font-semibold cursor-pointer transition-all hover:text-white" onclick="filterCollection('groomsmen', this)">Casual &amp; Entourage</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="collection-grid">
+        <!-- 1. Bespoke Groom Sherwanis & Bandhgalas -->
+        <div class="collection-item perspective-card group cursor-pointer bg-[#131317] border border-[#24242C] rounded-xl overflow-hidden p-4 hover:border-[#D4AF37]/60 transition-all" data-category="sherwanis" onclick="openQuickView('Midnight Royal Embroidered Bandhgala', 'Imperial Black Groom Bandhgala', 'Subtle tonal black-on-black floral micro embroidery sprawling across shoulders with handcrafted fabric buttons and mandarin collar.', 'Pure Raw Silk &amp; Matka Weave', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBS71hxjoJ_sqlmFhPmox7P73H0sKomKeOyLATPPNi7hiIemZtoAzwUWISvt5PUD_Ic_sS18Yx9Y3f9UecWjhpQyKnD2EQ4te4MlwD3LqQkoV6uligCtOUXu6RbR9NTCDW4NemMlV68JXkKtr0UINuqJgbzpA3Ru0QsLY8M7VB9cG2-mO3WsQsYZu4oRWD2PYJE5nAX9JPFvAzu2UOYXkuYbBUukpYSslf00e9qVgLV9HMcoArYQJILDA')">
+          <div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-4 bg-[#1C1C24]">
+            <img alt="Midnight Royal Embroidered Bandhgala" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS71hxjoJ_sqlmFhPmox7P73H0sKomKeOyLATPPNi7hiIemZtoAzwUWISvt5PUD_Ic_sS18Yx9Y3f9UecWjhpQyKnD2EQ4te4MlwD3LqQkoV6uligCtOUXu6RbR9NTCDW4NemMlV68JXkKtr0UINuqJgbzpA3Ru0QsLY8M7VB9cG2-mO3WsQsYZu4oRWD2PYJE5nAX9JPFvAzu2UOYXkuYbBUukpYSslf00e9qVgLV9HMcoArYQJILDA">
+            <div class="absolute top-3 left-3 bg-[#0A0A0C]/80 backdrop-blur-sm border border-[#D4AF37]/40 px-2.5 py-1 rounded text-[9px] uppercase tracking-widest text-[#D4AF37] font-bold">Groom Spotlight</div>
+          </div>
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-serif-cormorant text-2xl font-semibold text-white group-hover:text-gold-gradient transition-colors">Midnight Embroidered Bandhgala</h3>
+              <p class="text-xs text-[#9C988F] mt-1">Tonal shoulder embroidery &amp; tailored silhouette.</p>
+            </div>
+            <span class="text-xs text-[#D4AF37] group-hover:underline uppercase tracking-wider font-semibold">Enquire ↗</span>
+          </div>
+        </div>
+
+        <!-- 2. Designer Tuxedos - Crystal Pinstripe Tuxedo -->
+        <div class="collection-item perspective-card group cursor-pointer bg-[#131317] border border-[#24242C] rounded-xl overflow-hidden p-4 hover:border-[#D4AF37]/60 transition-all" data-category="tuxedos" onclick="openQuickView('Crystal Pinstripe Italian Tuxedo', 'Reception &amp; Cocktail Bespoke Suit', 'Double-lapel construction adorned with hand-stitched crystal beaded stripes, three-piece matching vest, and sleek pleated trousers.', 'Super 140s Italian Wool &amp; Crystal Seed Beads', 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9xvKQ1WoyS7sjmDWZRjV7CgarzstKkmaQcg-6nNYgWhAppTL51ebxo6I2AjS_D8WrMwiPkQ_lgj2izzZaPNL3sEK8osQN0RjkAvsOrNL2jDI8vAbsiiWjs78MUThUBhMmmvU1e2tXy2L-4WVnZ7YTPXSfAmUjYxmoWkoP0VmwP6U_vVAUH2NcnfF-VBnBuQAdYBocgSgk6lR5GryFWWI50sHv0oRi3HgQReUkQqRr2nLqx18xbb1d5Q')">
+          <div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-4 bg-[#1C1C24]">
+            <img alt="Crystal Pinstripe Italian Tuxedo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9xvKQ1WoyS7sjmDWZRjV7CgarzstKkmaQcg-6nNYgWhAppTL51ebxo6I2AjS_D8WrMwiPkQ_lgj2izzZaPNL3sEK8osQN0RjkAvsOrNL2jDI8vAbsiiWjs78MUThUBhMmmvU1e2tXy2L-4WVnZ7YTPXSfAmUjYxmoWkoP0VmwP6U_vVAUH2NcnfF-VBnBuQAdYBocgSgk6lR5GryFWWI50sHv0oRi3HgQReUkQqRr2nLqx18xbb1d5Q">
+            <div class="absolute top-3 left-3 bg-[#0A0A0C]/80 backdrop-blur-sm border border-[#D4AF37]/40 px-2.5 py-1 rounded text-[9px] uppercase tracking-widest text-[#D4AF37] font-bold">Reception &amp; Formal</div>
+          </div>
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-serif-cormorant text-2xl font-semibold text-white group-hover:text-gold-gradient transition-colors">Crystal Pinstripe Tuxedo</h3>
+              <p class="text-xs text-[#9C988F] mt-1">Hand-beaded crystal lapels &amp; tailored waistcoat.</p>
+            </div>
+            <span class="text-xs text-[#D4AF37] group-hover:underline uppercase tracking-wider font-semibold">Enquire ↗</span>
+          </div>
+        </div>
+
+        <!-- 3. Caramel Double-Breasted Suit -->
+        <div class="collection-item perspective-card group cursor-pointer bg-[#131317] border border-[#24242C] rounded-xl overflow-hidden p-4 hover:border-[#D4AF37]/60 transition-all" data-category="tuxedos" onclick="openQuickView('The Caramel Double-Breasted Suit', 'Contemporary Groom &amp; Luxury Sangeet', 'Warm caramel tone double-breasted blazer with structured peak lapels and contrast trousers. Styled with modern dark accessories.', 'Fine Tropical Wool Blend', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAsCMQtPKFgZ3YxDmsSXXXr4kvZz9QhaETSl6UFvzu2WoroqJHWiOIiUlJcdTJHGi7YoMz7Rc_X02fZb3LlfmxKKkd-i3-37So7-QwLh-l8Szsax8hyq3bIDAw_jH92NMt83pscnFu2BcMZc5OdrYO_wUAqgeWlW4zMpuLmIEnARpufMjgUBvBW3mSjd6x5zLtRkgoo4quahyQPU4_A6GkSMEuN-BirkVJAXVvtxnSPfn_36COgrO_z6w')">
+          <div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-4 bg-[#1C1C24]">
+            <img alt="Caramel Double-Breasted Suit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsCMQtPKFgZ3YxDmsSXXXr4kvZz9QhaETSl6UFvzu2WoroqJHWiOIiUlJcdTJHGi7YoMz7Rc_X02fZb3LlfmxKKkd-i3-37So7-QwLh-l8Szsax8hyq3bIDAw_jH92NMt83pscnFu2BcMZc5OdrYO_wUAqgeWlW4zMpuLmIEnARpufMjgUBvBW3mSjd6x5zLtRkgoo4quahyQPU4_A6GkSMEuN-BirkVJAXVvtxnSPfn_36COgrO_z6w">
+            <div class="absolute top-3 left-3 bg-[#0A0A0C]/80 backdrop-blur-sm border border-[#D4AF37]/40 px-2.5 py-1 rounded text-[9px] uppercase tracking-widest text-[#D4AF37] font-bold">Modern Tailoring</div>
+          </div>
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-serif-cormorant text-2xl font-semibold text-white group-hover:text-gold-gradient transition-colors">Caramel Double-Breasted Suit</h3>
+              <p class="text-xs text-[#9C988F] mt-1">Six-button peak lapel suit with sleek black trousers.</p>
+            </div>
+            <span class="text-xs text-[#D4AF37] group-hover:underline uppercase tracking-wider font-semibold">Enquire ↗</span>
+          </div>
+        </div>
+
+        <!-- 4. Bottle Green Velvet Ensemble -->
+        <div class="collection-item perspective-card group cursor-pointer bg-[#131317] border border-[#24242C] rounded-xl overflow-hidden p-4 hover:border-[#D4AF37]/60 transition-all" data-category="indo-western" onclick="openQuickView('Bottle Green Velvet Imperial Suit', 'Velvet Occasion &amp; Reception Couture', 'Deep emerald bottle-green velvet blazer with double breasted buttons and white high-waist pleated trousers.', 'Premium Italian Velvet with White Suiting Crepe', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAbS7_4AJHD57Y84t13X8VWppPWREjgRR2vUAvWTdYfmUqArdT-IIg3rIHkpCQ2dxQPLqe6NXxhrWaVYfEaISAhTTWuz4GDCKvrZgAwJxRwhaqiJsVgYJJgZLwqbnpVgKgqzJ2W_wjKtO7sLJIn4nC89Yj7anxWqrfpypzZrPWhRtabIDy4tGor3-2vmz-DXPJEXIMPMfvODKxj4Pl2X2_RHZsR54z-o2VitBHNfp7DRVj6EJBnI_vR0A')">
+          <div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-4 bg-[#1C1C24]">
+            <img alt="Bottle Green Velvet Imperial Suit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbS7_4AJHD57Y84t13X8VWppPWREjgRR2vUAvWTdYfmUqArdT-IIg3rIHkpCQ2dxQPLqe6NXxhrWaVYfEaISAhTTWuz4GDCKvrZgAwJxRwhaqiJsVgYJJgZLwqbnpVgKgqzJ2W_wjKtO7sLJIn4nC89Yj7anxWqrfpypzZrPWhRtabIDy4tGor3-2vmz-DXPJEXIMPMfvODKxj4Pl2X2_RHZsR54z-o2VitBHNfp7DRVj6EJBnI_vR0A">
+            <div class="absolute top-3 left-3 bg-[#0A0A0C]/80 backdrop-blur-sm border border-[#D4AF37]/40 px-2.5 py-1 rounded text-[9px] uppercase tracking-widest text-[#D4AF37] font-bold">Imperial Velvet</div>
+          </div>
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-serif-cormorant text-2xl font-semibold text-white group-hover:text-gold-gradient transition-colors">Green Velvet Imperial Blazer</h3>
+              <p class="text-xs text-[#9C988F] mt-1">Lush velvet finish with pristine white flare trousers.</p>
+            </div>
+            <span class="text-xs text-[#D4AF37] group-hover:underline uppercase tracking-wider font-semibold">Enquire ↗</span>
+          </div>
+        </div>
+
+        <!-- 5. Casual Pre-Wedding / Beige Kurta Lounge -->
+        <div class="collection-item perspective-card group cursor-pointer bg-[#131317] border border-[#24242C] rounded-xl overflow-hidden p-4 hover:border-[#D4AF37]/60 transition-all" data-category="groomsmen" onclick="openQuickView('Bespoke Beige Kurta &amp; Loungewear', 'Pre-Wedding Haldi &amp; Mehendi Ensemble', 'Minimalist sand beige pure cotton silk kurta with geometric neckline embroidery and relaxed fluid trousers. Ideal for groom prep &amp; photoshoots.', 'Pure Cotton Silk &amp; Chanderi', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCf2KWOv7E8CvhFtSnKy-PniRGT-RbJ564SLfm18cySDhq8N8JYa9yL3bn7u2Jya4LTZRmfzOTmFEV2Pik0yVlYm0lHUGdnYSimUkitVp4DjodoRn_Mh5L2ugiwrmVxCQTsPQ1ZDkbiwFdXR4q7HAWFsJCC41NXrSuKRRCmaciJIBoKPbzKHJ2GuoodfbHiI8AtkFL5NJh8dLNI48iM1A2IQLDtD1GnyKfjJ4SUOqb5Kq5Ml47xfpuZ_w')">
+          <div class="relative overflow-hidden aspect-[4/5] rounded-lg mb-4 bg-[#1C1C24]">
+            <img alt="Bespoke Beige Kurta &amp; Loungewear Ensemble" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf2KWOv7E8CvhFtSnKy-PniRGT-RbJ564SLfm18cySDhq8N8JYa9yL3bn7u2Jya4LTZRmfzOTmFEV2Pik0yVlYm0lHUGdnYSimUkitVp4DjodoRn_Mh5L2ugiwrmVxCQTsPQ1ZDkbiwFdXR4q7HAWFsJCC41NXrSuKRRCmaciJIBoKPbzKHJ2GuoodfbHiI8AtkFL5NJh8dLNI48iM1A2IQLDtD1GnyKfjJ4SUOqb5Kq5Ml47xfpuZ_w">
+            <div class="absolute top-3 left-3 bg-[#0A0A0C]/80 backdrop-blur-sm border border-[#D4AF37]/40 px-2.5 py-1 rounded text-[9px] uppercase tracking-widest text-[#D4AF37] font-bold">Pre-Wedding &amp; Casual</div>
+          </div>
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-serif-cormorant text-2xl font-semibold text-white group-hover:text-gold-gradient transition-colors">Beige Kurta Lounge Set</h3>
+              <p class="text-xs text-[#9C988F] mt-1">Lightweight cotton silk with tonal placket stitching.</p>
+            </div>
+            <span class="text-xs text-[#D4AF37] group-hover:underline uppercase tracking-wider font-semibold">Enquire ↗</span>
+          </div>
+        </div>
+
+        <!-- 6. Bespoke Tailoring Consultation Card -->
+        <div class="collection-item perspective-card group cursor-pointer bg-gradient-to-br from-[#16161E] to-[#0E0E12] border border-[#D4AF37]/50 rounded-xl overflow-hidden p-6 flex flex-col justify-between hover:border-[#D4AF37] transition-all" data-category="all" onclick="openBookingModal('Bespoke Master Tailoring Consultation')">
+          <div class="flex flex-col items-center text-center pt-4">
+            <div class="w-16 h-16 rounded-full bg-[#0C0C0F] border border-[#D4AF37]/60 p-2 flex items-center justify-center mb-4 shadow-lg">
+              <img alt="CODE" class="w-11 h-11 object-contain invert brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJam-vx4xlP98XE2YkB-RKLglVLYKAPHzJF-M3MkTdknBepNf4gpdY0S1NfX0y3HhTB_Eng-qdjOYZMay60KmCgMIIVfFOuC50GQSxVfNucaybJljIM0S3TO_eZdP_nZLMP_8FooUhULxTDeNyxi0nYG5VKIRGxHaCswUPADJeAC9_VLHzIUtfcQZd8f5yAi9oAPEG9lGns-SYkRnvjoGDzTHMnj_N4RSuQds19EIzIOwbfMTHzTC28A">
+            </div>
+            <span class="text-[10px] font-bold tracking-[0.25em] text-[#D4AF37] uppercase">Custom Service</span>
+            <h3 class="font-serif-cormorant text-2xl sm:text-3xl font-semibold text-white mt-2">Bespoke Master Tailoring</h3>
+            <p class="text-xs text-[#A9A59C] mt-2 leading-relaxed max-w-xs">
+              Personal consultations for groom &amp; groomsmen. We customize lapels, lining, embroidery, and cut to your exact body measurements.
+            </p>
+          </div>
+          <div class="pt-6">
+            <button class="w-full inline-flex items-center justify-center gap-2 bg-[#D4AF37] text-black font-bold text-xs uppercase tracking-widest py-3.5 rounded hover:bg-[#E5C14F] transition-colors cursor-pointer shadow-md">
+              <span>BOOK PRIVATE FITTING</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ENTOURAGE & GROOMSMEN PACKAGE CALCULATOR (KILLER BUSINESS FEATURE) -->
+  <section class="py-20 lg:py-24 px-6 lg:px-12 bg-[#0B0B0F] border-b border-[#222228]" id="calculator">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="px-3 py-1 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] font-bold uppercase tracking-widest inline-block mb-3">
+          Interactive Wedding Package Builder
+        </span>
+        <h2 class="font-serif-cormorant text-3xl sm:text-4xl md:text-5xl font-semibold text-white">
+          Plan Your Wedding <span class="italic font-normal text-gold-gradient">Entourage</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-[#A09C92] mt-3">
+          Coordinate the groom, best men, brothers, and family. Select your entourage size and color palette to receive an instant bulk package quotation on WhatsApp.
+        </p>
+      </div>
+
+      <div class="bg-[#121218] border border-[#D4AF37]/40 rounded-2xl p-6 sm:p-10 shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <!-- Left: Controls -->
+          <div class="space-y-6">
+            <!-- 1. Groom Attire -->
+            <div>
+              <label class="block text-[11px] uppercase font-bold tracking-wider text-[#D4AF37] mb-2">1. Select Groom Attire Style</label>
+              <select id="calcGroomStyle" onchange="updateEntourageCalculator()" class="w-full bg-[#181822] border border-[#2D2D3A] focus:border-[#D4AF37] rounded-lg px-4 py-3 text-sm text-white focus:outline-none">
+                <option value="Royal Ivory Embroidered Tuxedo" data-price="24500">Royal Ivory Embroidered Tuxedo (₹24,500)</option>
+                <option value="Midnight Royal Embroidered Bandhgala" data-price="21000">Midnight Royal Embroidered Bandhgala (₹21,000)</option>
+                <option value="Crystal Pinstripe Italian Tuxedo" data-price="28000">Crystal Pinstripe Italian Tuxedo (₹28,000)</option>
+                <option value="Bottle Green Velvet Imperial Blazer" data-price="18500">Bottle Green Velvet Imperial Blazer (₹18,500)</option>
+                <option value="Mauve Belted Designer Suit" data-price="19500">Mauve Belted Designer Suit (₹19,500)</option>
+              </select>
+            </div>
+
+            <!-- 2. Groomsmen Quantity Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-[11px] uppercase font-bold tracking-wider text-[#D4AF37]">2. Number of Groomsmen / Entourage</label>
+                <span id="calcGroomsmenCountText" class="text-sm font-bold text-white bg-[#1E1E2A] px-2.5 py-0.5 rounded border border-[#333]">4 Groomsmen</span>
+              </div>
+              <input id="calcGroomsmenRange" type="range" min="0" max="12" value="4" oninput="updateEntourageCalculator()" class="w-full accent-[#D4AF37] cursor-pointer bg-[#242430] h-2 rounded-lg">
+              <div class="flex justify-between text-[10px] text-[#7E7A71] mt-1">
+                <span>0 (Just Groom)</span>
+                <span>4 Groomsmen</span>
+                <span>8</span>
+                <span>12 (Grand Entourage)</span>
+              </div>
+            </div>
+
+            <!-- 3. Entourage Style & Palette -->
+            <div>
+              <label class="block text-[11px] uppercase font-bold tracking-wider text-[#D4AF37] mb-2">3. Coordinated Groomsmen Style</label>
+              <select id="calcEntourageStyle" onchange="updateEntourageCalculator()" class="w-full bg-[#181822] border border-[#2D2D3A] focus:border-[#D4AF37] rounded-lg px-4 py-3 text-sm text-white focus:outline-none">
+                <option value="Slim-Fit Tailored Two-Piece Suits" data-price="6500">Matching Tailored Two-Piece Suits (₹6,500 / person)</option>
+                <option value="Designer Tuxedo Blazers + Bowties" data-price="7800">Designer Tuxedo Blazers + Bowties (₹7,800 / person)</option>
+                <option value="Coordinated Raw Silk Kurta Sets" data-price="3800">Coordinated Raw Silk Kurta Sets (₹3,800 / person)</option>
+                <option value="Velvet Waistcoat &amp; Trouser Sets" data-price="4900">Velvet Waistcoat &amp; Trouser Sets (₹4,900 / person)</option>
+              </select>
+            </div>
+
+            <!-- 4. Color Theme -->
+            <div>
+              <label class="block text-[11px] uppercase font-bold tracking-wider text-[#D4AF37] mb-2">4. Color Theme Preference</label>
+              <div class="grid grid-cols-4 gap-2" id="calcColorSwatches">
+                <button type="button" onclick="selectThemeColor('Ivory & Gold', this)" class="theme-btn border-2 border-[#D4AF37] bg-[#181820] text-[10px] font-bold text-white py-2 rounded text-center">Ivory &amp; Gold</button>
+                <button type="button" onclick="selectThemeColor('Emerald Velvet', this)" class="theme-btn border border-[#2F2F3D] bg-[#181820] text-[10px] font-bold text-[#A6A299] py-2 rounded text-center hover:text-white">Emerald</button>
+                <button type="button" onclick="selectThemeColor('Midnight Black', this)" class="theme-btn border border-[#2F2F3D] bg-[#181820] text-[10px] font-bold text-[#A6A299] py-2 rounded text-center hover:text-white">Black</button>
+                <button type="button" onclick="selectThemeColor('Caramel & Lilac', this)" class="theme-btn border border-[#2F2F3D] bg-[#181820] text-[10px] font-bold text-[#A6A299] py-2 rounded text-center hover:text-white">Pastels</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Summary Card -->
+          <div class="bg-[#181822] border border-[#2A2A38] rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] block mb-1">Estimated Package Estimate</span>
+              <h3 class="font-serif-cormorant text-2xl text-white font-semibold mb-4">CODE Wedding Entourage Suite</h3>
+
+              <div class="divide-y divide-[#232332] text-xs space-y-3 pb-4">
+                <div class="flex justify-between pt-2">
+                  <span class="text-[#9E9A90]">Groom Outfit:</span>
+                  <span class="text-white font-medium text-right" id="summaryGroomStyle">Royal Ivory Embroidered Tuxedo</span>
+                </div>
+                <div class="flex justify-between pt-3">
+                  <span class="text-[#9E9A90]">Entourage Size:</span>
+                  <span class="text-white font-medium" id="summaryEntourageCount">4 Groomsmen</span>
+                </div>
+                <div class="flex justify-between pt-3">
+                  <span class="text-[#9E9A90]">Groomsmen Style:</span>
+                  <span class="text-white font-medium text-right" id="summaryEntourageStyle">Matching Two-Piece Suits</span>
+                </div>
+                <div class="flex justify-between pt-3">
+                  <span class="text-[#9E9A90]">Selected Theme:</span>
+                  <span class="text-[#D4AF37] font-semibold" id="summaryTheme">Ivory &amp; Gold</span>
+                </div>
+                <div class="flex justify-between pt-3">
+                  <span class="text-[#9E9A90]">Group Trial &amp; Alterations:</span>
+                  <span class="text-emerald-400 font-medium">Included Free in Malappuram</span>
+                </div>
+              </div>
+
+              <!-- Price Box -->
+              <div class="mt-4 p-4 rounded-lg bg-[#0E0E14] border border-[#D4AF37]/40 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase font-bold text-[#8C8880] tracking-wider block">Estimated Total</span>
+                  <span class="text-xs text-[#D4AF37] font-medium">Includes bulk entourage discount</span>
+                </div>
+                <div class="text-right">
+                  <span class="font-serif-cormorant text-3xl font-bold text-white" id="summaryTotal">₹50,500</span>
+                  <span class="text-[10px] text-[#888] block">approx. (excl. tax)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Action -->
+            <div class="pt-6">
+              <button onclick="sendEntourageQuoteWhatsApp()" class="w-full bg-[#D4AF37] hover:bg-[#E5C14F] text-black font-bold text-xs uppercase tracking-widest py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+                <span>Request Entourage Quote on WhatsApp</span>
+                <span>→</span>
+              </button>
+              <p class="text-[10px] text-center text-[#7A766F] mt-2">Sends your selected specifications directly to CODE styling team at Varangode.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NRI GROOM & GULF CONCIERGE (MAJOR REVENUE OPPORTUNITY IN MALAPPURAM) -->
+  <section class="py-20 lg:py-24 px-6 lg:px-12 bg-gradient-to-b from-[#0A0A0C] via-[#121217] to-[#0A0A0C] border-b border-[#222228]" id="nri-concierge">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Visual / Badge (Left 5 cols) -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden border border-[#D4AF37]/40 bg-[#16161D] p-3 shadow-2xl">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-[#14141A]">
+              <img alt="NRI Groom Wedding Consultation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX9zrGRWelXnJClnEmu19CaXahpvJW-Kwr-K0MzI1YeDF43sz8Wek93wqa2x9MNT7JhEllK5sl4KM05xfAcBA3JVquKuvZqF_dqN7Dy5N6C2CbLI4mvVAgjx_84ERY-S-kYnUaOd6vSpdhVw9i11aryvE-q7Tyxm6ODAppx2d2iLkFW5e5joUrt07JB8KB6-Hq09nW6s6cupspVJ_hXrO6QNjyyqxEZwZohHr1EQQsb7x8cFbqJg_HNw">
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-[#0F0F16]/90 backdrop-blur-md border border-[#D4AF37]/40">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-[#D4AF37]">NRI Video Trial Service</span>
+                </div>
+                <h4 class="font-serif-cormorant text-xl text-white font-semibold">Flying to Kerala for your Nikah?</h4>
+                <p class="text-xs text-[#A8A49A] mt-1">Book your wedding trials from Dubai, Jeddah, Doha, or Riyadh prior to flight arrival.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content (Right 7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#1C1C26] border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] font-bold uppercase tracking-widest">
+            <span>✈ Gulf &amp; Overseas Malayali Grooms</span>
+          </div>
+          <h2 class="font-serif-cormorant text-4xl sm:text-5xl font-semibold text-white leading-tight">
+            Plan your wedding attire <br>
+            <span class="italic font-normal text-gold-gradient">before landing at Calicut Airport.</span>
+          </h2>
+          <p class="text-sm sm:text-base text-[#BCB7AC] leading-relaxed">
+            Every year, hundreds of grooms fly home to Malappuram just days before their wedding with zero time to waste. With CODE's dedicated NRI Concierge, your bespoke fittings, fabric selections, and groomsmen sets are prepared in advance.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-[#14141B] border border-[#252530] space-y-1.5">
+              <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wider block">1. Video Consultation</span>
+              <p class="text-xs text-[#A19D94]">Live HD WhatsApp video call to inspect zardozi needlework, fabric drapes, and color tones.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-[#14141B] border border-[#252530] space-y-1.5">
+              <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wider block">2. Remote Measurement Guide</span>
+              <p class="text-xs text-[#A19D94]">Our master tailor guides your measurements over phone/video to ensure flawless initial stitching.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-[#14141B] border border-[#252530] space-y-1.5">
+              <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wider block">3. VIP Trial Lounge</span>
+              <p class="text-xs text-[#A19D94]">Direct trial session reserved at our Varangode showroom the moment you land in Malappuram.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-[#14141B] border border-[#252530] space-y-1.5">
+              <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wider block">4. 24-Hour Express Alteration</span>
+              <p class="text-xs text-[#A19D94]">Immediate in-house final touchups so your outfit is 100% wedding-ready on schedule.</p>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap gap-4 items-center">
+            <a href="https://wa.me/917907939090?text=Hello%20CODE%20Gents%20Wedding%20Collection%2C%20I%20am%20an%20NRI%20groom%20planning%20my%20wedding%20in%20Malappuram.%20I%20would%20like%20to%20book%20a%20video%20consultation." target="_blank" rel="noopener noreferrer" class="bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] text-[11px] font-bold tracking-widest uppercase px-8 py-4 rounded transition-all shadow-md inline-flex items-center gap-2">
+              <span>Book NRI Video Consultation</span>
+              <span>→</span>
+            </a>
+            <span class="text-xs text-[#8E8A80]">WhatsApp: <strong class="text-white">+91 79079 39090</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & HERITAGE -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#0E0E12] border-b border-[#222228]">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        <div class="lg:col-span-5">
+          <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#D4AF37] block mb-3">Our Legacy &amp; Artistry</span>
+          <h2 class="font-serif-cormorant text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
+            Where wedding <br>
+            memories find <span class="italic font-normal text-gold-gradient">perfection.</span>
+          </h2>
+          <div class="w-16 h-0.5 bg-[#D4AF37] mt-6"></div>
+        </div>
+        <div class="lg:col-span-7 space-y-6 text-[#BFB9AE] text-sm sm:text-base leading-relaxed">
+          <p>
+            At <strong class="text-white font-medium">CODE Gents Wedding Collection</strong> in Malappuram, wedding fashion isn't merely clothing—it is an art of personal presence. Built to cater to the discerning modern groom, our destination showroom at Kizhakkethala brings together grand handlooms, contemporary tuxedos, and opulent occasion-wear.
+          </p>
+          <p>
+            From the initial trial to the final master fitting, our stylists ensure you and your wedding party look coherent, authoritative, and splendidly confident for your Nikah, Reception, or Sangeet celebrations.
+          </p>
+          <div class="pt-4 flex flex-wrap items-center gap-6">
+            <a class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-[#D4AF37] hover:text-white transition-colors" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">
+              <span>Get Directions To Showroom</span>
+              <span>→</span>
+            </a>
+            <a class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-white hover:text-[#D4AF37] transition-colors" href="https://www.instagram.com/code_gentswedding/" rel="noopener noreferrer" target="_blank">
+              <span>Follow @code_gentswedding</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFTSMANSHIP PILLARS -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#08080A] border-b border-[#222228]" id="craft">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-3xl mb-16">
+        <span class="text-[11px] font-bold tracking-[0.25em] uppercase text-[#D4AF37] block mb-3">The CODE Standard</span>
+        <h2 class="font-serif-cormorant text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight mb-5">
+          Bespoke precision tailored for the spotlight of your life.
+        </h2>
+        <p class="text-sm sm:text-base text-[#9E9A90] leading-relaxed">
+          We handle everything from individual bespoke groom suits to synchronized attire for whole wedding entourages.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div class="bg-[#121217] p-8 lg:p-10 rounded-xl border border-[#24242C] hover:border-[#D4AF37]/50 transition-all flex flex-col justify-between cursor-pointer" onclick="openBookingModal('Pure Silks &amp; Handloom Consultation')">
+          <div>
+            <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] block mb-4">01 · Royal Fabrics</span>
+            <h3 class="font-serif-cormorant text-2xl font-semibold text-white mb-3">Pure Silks &amp; Velvets</h3>
+            <p class="text-xs sm:text-sm text-[#A39F95] leading-relaxed">
+              Sourced from premier textile artisans across India, our raw silks, rich Italian velvets, and luxury wool blends deliver exquisite drape and effortless comfort throughout long wedding rituals.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-[#1F1F26] text-[11px] text-[#D4AF37] font-medium tracking-wide">
+            Handcrafted Quality ↗
+          </div>
+        </div>
+
+        <div class="bg-[#121217] p-8 lg:p-10 rounded-xl border border-[#24242C] hover:border-[#D4AF37]/50 transition-all flex flex-col justify-between cursor-pointer" onclick="scrollToSection('calculator', event)">
+          <div>
+            <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] block mb-4">02 · Entourage Styling</span>
+            <h3 class="font-serif-cormorant text-2xl font-semibold text-white mb-3">Thematic Wedding Sets</h3>
+            <p class="text-xs sm:text-sm text-[#A39F95] leading-relaxed">
+              Planning coordinated looks for brothers, cousins, and friends? We design synchronized color palettes that elevate the groom while keeping groomsmen looking unified and sharp.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-[#1F1F26] text-[11px] text-[#D4AF37] font-medium tracking-wide">
+            Full Entourage Calculator ↗
+          </div>
+        </div>
+
+        <div class="bg-[#121217] p-8 lg:p-10 rounded-xl border border-[#24242C] hover:border-[#D4AF37]/50 transition-all flex flex-col justify-between cursor-pointer" onclick="openBookingModal('Master In-House Fitting Session')">
+          <div>
+            <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] block mb-4">03 · Flawless Execution</span>
+            <h3 class="font-serif-cormorant text-2xl font-semibold text-white mb-3">Master In-House Fitting</h3>
+            <p class="text-xs sm:text-sm text-[#A39F95] leading-relaxed">
+              Our expert tailors take exhaustive measurements and conduct trial sessions. We guarantee zero compromise on sleeve lengths, shoulder drape, and trouser break.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-[#1F1F26] text-[11px] text-[#D4AF37] font-medium tracking-wide">
+            Fast Precision Delivery ↗
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORE LOCATOR & HOURS BANNER -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#0E0E13] border-b border-[#222228]" id="boutique">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Store Info (Left 6 Cols) -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-[#1B1B22] border border-[#D4AF37]/40 text-[#D4AF37] text-[11px] font-bold uppercase tracking-widest">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+            </svg>
+            <span>Exclusive Destination Store</span>
+          </div>
+          <h2 class="font-serif-cormorant text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight">
+            Visit CODE in <br>
+            <span class="italic font-normal text-gold-gradient">Malappuram.</span>
+          </h2>
+          <p class="text-sm sm:text-base text-[#A8A49A] leading-relaxed">
+            Experience our complete wedding wardrobe in person. Located right at Varangode, Kizhakkethala, our showroom offers luxury trial lounges and dedicated stylists for you and your family.
+          </p>
+
+          <div class="p-5 rounded-xl bg-[#14141A] border border-[#2B2B36] space-y-3">
+            <div class="text-xs uppercase tracking-widest text-[#D4AF37] font-bold">Store Location</div>
+            <p class="text-base text-white font-medium">Varangode, Kizhakkethala, Malappuram, Keralam 676519</p>
+            <div class="flex flex-wrap gap-4 pt-1">
+              <a class="inline-flex items-center gap-1.5 text-xs text-[#D4AF37] hover:text-white font-semibold uppercase tracking-wider" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">
+                <span>Open in Google Maps</span>
+                <span>→</span>
+              </a>
+              <span class="text-[#454550]">|</span>
+              <a class="inline-flex items-center gap-1.5 text-xs text-white hover:text-[#D4AF37] font-semibold uppercase tracking-wider" href="tel:+917907939090">
+                <span>Call +91 79079 39090</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-xl bg-[#14141A] border border-[#2B2B36] cursor-pointer hover:border-[#D4AF37]/50 transition-colors" onclick="toggleHoursModal()">
+            <div class="flex items-center justify-between border-b border-[#24242E] pb-3 mb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#10B981] animate-pulse"></span>
+                <span class="text-xs uppercase tracking-widest text-white font-bold">Open Every Day</span>
+              </div>
+              <span class="text-xs text-[#D4AF37] font-medium tracking-wide">9:30 AM – 10:00 PM (Tap Schedule)</span>
+            </div>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs text-[#9E9A90]">
+              <div>Monday – Saturday: <span class="text-white">9:30 AM – 10 PM</span></div>
+              <div>Sunday: <span class="text-white">9:30 AM – 10 PM</span></div>
+            </div>
+            <p class="text-[11px] text-[#6E6A62] mt-3">Walk-ins welcome. Pre-wedding trial appointments recommended on weekends.</p>
+          </div>
+
+          <div>
+            <a class="inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] text-[11px] font-bold tracking-widest uppercase px-8 py-4 rounded transition-all shadow-md" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">
+              <span>GET DIRECTIONS TO SHOWROOM</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Showroom Visual / Navigation Card -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden border border-[#D4AF37]/40 bg-[#14141A] p-3 shadow-2xl">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-[#1C1C24]">
+              <img alt="CODE Groom Couture Showcase" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX9zrGRWelXnJClnEmu19CaXahpvJW-Kwr-K0MzI1YeDF43sz8Wek93wqa2x9MNT7JhEllK5sl4KM05xfAcBA3JVquKuvZqF_dqN7Dy5N6C2CbLI4mvVAgjx_84ERY-S-kYnUaOd6vSpdhVw9i11aryvE-q7Tyxm6ODAppx2d2iLkFW5e5joUrt07JB8KB6-Hq09nW6s6cupspVJ_hXrO6QNjyyqxEZwZohHr1EQQsb7x8cFbqJg_HNw">
+              <div class="absolute inset-0 bg-[#0B0B0E]/60 backdrop-blur-[2px]"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                <div class="w-14 h-14 rounded-full bg-[#D4AF37] text-black flex items-center justify-center mb-3 shadow-lg animate-bounce">
+                  <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                  </svg>
+                </div>
+                <h4 class="font-serif-cormorant text-2xl sm:text-3xl font-bold text-white mb-1">CODE Gents Wedding Collection</h4>
+                <p class="text-xs text-[#D8D4CA] max-w-sm mb-4">Varangode, Kizhakkethala, Malappuram, Keralam 676519</p>
+                <a class="px-5 py-2.5 bg-white text-black hover:bg-[#D4AF37] text-[11px] font-bold uppercase tracking-wider rounded transition-colors shadow" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">
+                  LAUNCH LIVE NAVIGATION ↗
+                </a>
+              </div>
+            </div>
+            <div class="mt-3 p-3 rounded-lg bg-[#0F0F14] flex items-center justify-between text-xs text-[#A8A49A]">
+              <span>Ample Customer Parking Available</span>
+              <span class="text-[#D4AF37] font-semibold">Near Kizhakkethala Junction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS & TRUST -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#09090C] border-b border-[#222228]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181822] border border-[#D4AF37]/40 mb-3">
+          <span class="text-[#D4AF37] text-xs">★★★★★</span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-[#D4AF37]">4.8 / 5 Rated on Google Reviews</span>
+        </div>
+        <h2 class="font-serif-cormorant text-3xl sm:text-4xl md:text-5xl font-semibold text-white">
+          Words from our <span class="italic font-normal text-gold-gradient">grooms.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div class="bg-[#121217] p-8 lg:p-9 rounded-xl border border-[#23232B] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-1 text-[#D4AF37] text-sm mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="font-serif-cormorant text-xl font-medium text-[#EBE7DF] leading-snug mb-6">
+              "Got my wedding ivory embellished tuxedo and groomsmen outfits from CODE. The photos came out beyond incredible. Master fitting was on point!"
+            </p>
+          </div>
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-white">Shaheer N.</div>
+            <div class="text-[10px] text-[#D4AF37] uppercase tracking-widest mt-0.5">Malappuram Groom · Nikah &amp; Reception</div>
+          </div>
+        </div>
+
+        <div class="bg-[#121217] p-8 lg:p-9 rounded-xl border border-[#23232B] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-1 text-[#D4AF37] text-sm mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="font-serif-cormorant text-xl font-medium text-[#EBE7DF] leading-snug mb-6">
+              "The bespoke tuxedos and bottle green velvet suits in the Varangode showroom are unmatched in Malappuram. The master tailor altered my jacket sleeves overnight with perfection."
+            </p>
+          </div>
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-white">Adil Kareem</div>
+            <div class="text-[10px] text-[#D4AF37] uppercase tracking-widest mt-0.5">Kizhakkethala · Groom</div>
+          </div>
+        </div>
+
+        <div class="bg-[#121217] p-8 lg:p-9 rounded-xl border border-[#23232B] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-1 text-[#D4AF37] text-sm mb-4">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="font-serif-cormorant text-xl font-medium text-[#EBE7DF] leading-snug mb-6">
+              "Courteous staff, premium fabrics, and great pricing. Coordinated 6 suits for our cousins group seamlessly. Best gents wedding cloth centre in Malappuram district."
+            </p>
+          </div>
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-white">Salman Faris</div>
+            <div class="text-[10px] text-[#D4AF37] uppercase tracking-widest mt-0.5">Perinthalmanna · Wedding Entourage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-20 lg:py-28 px-6 lg:px-12 bg-[#0B0B0E] border-b border-[#222228]" id="faq">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.25em] uppercase text-[#D4AF37] block mb-2">Have Inquiries?</span>
+        <h2 class="font-serif-cormorant text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4">
+          Frequently Asked <span class="italic font-normal text-gold-gradient">Questions</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-[#A09C92] max-w-xl mx-auto">
+          Everything you need to know about visiting CODE showroom, booking fittings, and custom groomsmen orders.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="accordion-item rounded-xl border border-[#23232C] bg-[#121217] p-5 cursor-pointer hover:border-[#D4AF37]/50 transition-colors" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif-cormorant text-xl sm:text-2xl font-semibold text-white">
+              Where exactly is the CODE Gents Wedding Collection showroom located?
+            </h3>
+            <span class="accordion-icon text-[#D4AF37] text-xl transition-transform duration-300">↓</span>
+          </div>
+          <div class="accordion-content">
+            <p class="text-xs sm:text-sm text-[#A7A398] leading-relaxed pt-3">
+              Our showroom is located at <strong class="text-white">Varangode, Kizhakkethala, Malappuram, Keralam 676519</strong>. Conveniently situated near Kizhakkethala junction with ample customer parking. You can navigate directly via <a class="text-[#D4AF37] underline" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" target="_blank">Google Maps Link</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item rounded-xl border border-[#23232C] bg-[#121217] p-5 cursor-pointer hover:border-[#D4AF37]/50 transition-colors" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif-cormorant text-xl sm:text-2xl font-semibold text-white">
+              What are your showroom timings throughout the week?
+            </h3>
+            <span class="accordion-icon text-[#D4AF37] text-xl transition-transform duration-300">↓</span>
+          </div>
+          <div class="accordion-content">
+            <p class="text-xs sm:text-sm text-[#A7A398] leading-relaxed pt-3">
+              CODE is open <strong class="text-white">Every Day from Monday to Sunday, 9:30 AM to 10:00 PM</strong>. We remain open on public holidays to accommodate busy wedding shopping schedules.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item rounded-xl border border-[#23232C] bg-[#121217] p-5 cursor-pointer hover:border-[#D4AF37]/50 transition-colors" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif-cormorant text-xl sm:text-2xl font-semibold text-white">
+              Do you customize synchronized attire for groomsmen and family?
+            </h3>
+            <span class="accordion-icon text-[#D4AF37] text-xl transition-transform duration-300">↓</span>
+          </div>
+          <div class="accordion-content">
+            <p class="text-xs sm:text-sm text-[#A7A398] leading-relaxed pt-3">
+              Yes, this is one of our flagship specialties! We design coordinated wedding sets, matching suits, and sherwani complements for entire wedding parties (3 to 12+ members) in requested color palettes. Use our <a href="#calculator" class="text-[#D4AF37] underline">Entourage Calculator</a> above to estimate your package!
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item rounded-xl border border-[#23232C] bg-[#121217] p-5 cursor-pointer hover:border-[#D4AF37]/50 transition-colors" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif-cormorant text-xl sm:text-2xl font-semibold text-white">
+              How early before my wedding date should I visit for fitting?
+            </h3>
+            <span class="accordion-icon text-[#D4AF37] text-xl transition-transform duration-300">↓</span>
+          </div>
+          <div class="accordion-content">
+            <p class="text-xs sm:text-sm text-[#A7A398] leading-relaxed pt-3">
+              While we carry a wide assortment of ready-to-wear tuxedos and blazers that can be altered within 24–48 hours, for bespoke made-to-measure tailoring and intricate hand zardozi embroidery we recommend visiting 2 to 4 weeks prior to the wedding date.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item rounded-xl border border-[#23232C] bg-[#121217] p-5 cursor-pointer hover:border-[#D4AF37]/50 transition-colors" onclick="toggleAccordion(this)">
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif-cormorant text-xl sm:text-2xl font-semibold text-white">
+              Can I consult on WhatsApp before visiting or from the Gulf?
+            </h3>
+            <span class="accordion-icon text-[#D4AF37] text-xl transition-transform duration-300">↓</span>
+          </div>
+          <div class="accordion-content">
+            <p class="text-xs sm:text-sm text-[#A7A398] leading-relaxed pt-3">
+              Absolutely! You can chat or book video calls directly with our styling consultants at <strong class="text-white">+91 79079 39090</strong>. Send us your preferred color theme or reference designs to check availability immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="https://wa.me/917907939090?text=Hi%20CODE%20Gents%20Wedding%20Collection%2C%20I%20have%20a%20few%20questions%20regarding%20your%20groom%20wear." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] text-[11px] font-bold tracking-widest uppercase px-8 py-4 rounded transition-all shadow-md">
+          <span>Chat Directly On WhatsApp</span>
+          <span class="text-sm">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#070709] border-t border-[#1F1F26] pt-16 pb-12 px-6 lg:px-12 text-[#9A968C]">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-16">
+        <!-- Col 1 -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center space-x-3 cursor-pointer" onclick="scrollToSection('home', event)">
+            <div class="w-12 h-12 rounded-full bg-[#141418] border border-[#D4AF37]/50 p-1 flex items-center justify-center">
+              <img alt="CODE" class="w-9 h-9 object-contain invert brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJam-vx4xlP98XE2YkB-RKLglVLYKAPHzJF-M3MkTdknBepNf4gpdY0S1NfX0y3HhTB_Eng-qdjOYZMay60KmCgMIIVfFOuC50GQSxVfNucaybJljIM0S3TO_eZdP_nZLMP_8FooUhULxTDeNyxi0nYG5VKIRGxHaCswUPADJeAC9_VLHzIUtfcQZd8f5yAi9oAPEG9lGns-SYkRnvjoGDzTHMnj_N4RSuQds19EIzIOwbfMTHzTC28A">
+            </div>
+            <div>
+              <span class="font-serif-cormorant text-2xl font-bold tracking-wider text-white">CODE</span>
+              <p class="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37]">Gents Wedding Collection</p>
+            </div>
+          </div>
+          <p class="text-xs text-[#8E8A80] max-w-xs leading-relaxed">
+            Malappuram's premier destination for bespoke groom sherwanis, designer wedding suits, tuxedos, and synchronized groomsmen attire.
+          </p>
+          <div class="flex items-center space-x-3 pt-2">
+            <a class="w-9 h-9 rounded-full border border-[#2D2D36] bg-[#14141A] flex items-center justify-center text-white hover:text-[#D4AF37] hover:border-[#D4AF37] transition-all" href="https://www.instagram.com/code_gentswedding/" rel="noopener noreferrer" target="_blank" title="Instagram">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+            </a>
+            <a class="w-9 h-9 rounded-full border border-[#2D2D36] bg-[#14141A] flex items-center justify-center text-white hover:text-[#D4AF37] hover:border-[#D4AF37] transition-all" href="tel:+917907939090" title="Call Showroom">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+            </a>
+            <a class="w-9 h-9 rounded-full border border-[#2D2D36] bg-[#14141A] flex items-center justify-center text-[#25D366] hover:border-[#25D366] transition-all" href="https://wa.me/917907939090?text=Hi%20CODE%20Gents%20Wedding%20Collection%2C%20I%20would%20like%20to%20consult%20about%20groom%20wear." rel="noopener noreferrer" target="_blank" title="WhatsApp">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="lg:col-span-2 space-y-3">
+          <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] block">Collections</span>
+          <ul class="space-y-2 text-xs text-[#AEA99D]">
+            <li><button class="hover:text-white transition-colors cursor-pointer text-left" onclick="scrollToSection('collections', event); filterCollection('sherwanis');">Groom Sherwanis</button></li>
+            <li><button class="hover:text-white transition-colors cursor-pointer text-left" onclick="scrollToSection('collections', event); filterCollection('tuxedos');">Designer Tuxedos</button></li>
+            <li><button class="hover:text-white transition-colors cursor-pointer text-left" onclick="scrollToSection('collections', event); filterCollection('indo-western');">Indo-Western Suits</button></li>
+            <li><button class="hover:text-white transition-colors cursor-pointer text-left" onclick="scrollToSection('calculator', event);">Entourage Packages</button></li>
+            <li><button class="hover:text-white transition-colors cursor-pointer text-left" onclick="openQuizModal();">Style Look Finder</button></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="lg:col-span-3 space-y-3">
+          <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] block">Store Address</span>
+          <div class="text-xs text-[#AEA99D] leading-relaxed space-y-1">
+            <p class="font-semibold text-white">CODE Gents Wedding Collection</p>
+            <p>Varangode, Kizhakkethala</p>
+            <p>Malappuram, Keralam 676519</p>
+            <p class="pt-2 text-white font-medium">WhatsApp: +91 79079 39090</p>
+            <a class="inline-block pt-1 text-[#D4AF37] hover:underline font-semibold" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">Google Maps Location ↗</a>
+          </div>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="lg:col-span-3 space-y-3">
+          <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#D4AF37] block">Opening Hours</span>
+          <div class="space-y-2 text-xs text-[#AEA99D]">
+            <button class="text-white font-semibold flex items-center gap-1.5 cursor-pointer hover:text-[#D4AF37] transition-colors" onclick="toggleHoursModal()">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Open Every Day (Mon – Sun)</span>
+              <span class="text-[10px] text-[#D4AF37]">▾</span>
+            </button>
+            <p>9:30 AM – 10:00 PM</p>
+            <div class="pt-2">
+              <span class="text-[10px] uppercase tracking-wider text-[#736F65] block">Instagram Official</span>
+              <a class="text-xs text-white hover:text-[#D4AF37] font-medium" href="https://www.instagram.com/code_gentswedding/" rel="noopener noreferrer" target="_blank">@code_gentswedding</a>
+            </div>
+            <div class="pt-3">
+              <button onclick="openPitchModal()" class="text-[10px] text-[#D4AF37] uppercase tracking-widest font-bold underline cursor-pointer hover:text-white">
+                👔 Owner ROI &amp; Digital Opportunity
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-[#1C1C22] flex flex-col sm:flex-row items-center justify-between text-[11px] text-[#736F65] tracking-wider">
+        <p>© 2026 CODE Gents Wedding Collection · Malappuram. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0 font-medium uppercase text-[10px] tracking-[0.2em] text-[#D4AF37]">WHERE MALAPPURAM GROOMS GET STYLED</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <aside class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <!-- Live Help Badge -->
+    <div class="bg-[#181822] border border-[#25D366]/40 text-white text-[11px] font-medium px-3 py-1.5 rounded-full shadow-xl hidden sm:flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-[#25D366] animate-ping"></span>
+      <span>Chat with Stylist on WhatsApp</span>
+    </div>
+    <a class="wa-pulse flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-2xl transition-transform duration-300 hover:scale-110 cursor-pointer" href="https://wa.me/917907939090?text=Hi%20CODE%20Gents%20Wedding%20Collection%2C%20I%20would%20like%20to%20know%20more%20about%20your%20wedding%20attire%20and%20groom%20collections." rel="noopener noreferrer" target="_blank" title="Chat on WhatsApp">
+      <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+    </a>
+  </aside>
+
+  <!-- MODAL 1: BOOKING & ENQUIRY -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md px-4 hidden" id="bookingModal">
+    <div class="relative w-full max-w-lg bg-[#121217] border border-[#D4AF37]/50 rounded-2xl p-6 sm:p-8 shadow-2xl max-h-[92vh] overflow-y-auto">
+      <button class="absolute top-5 right-5 text-[#8E8A83] hover:text-white text-2xl font-light w-8 h-8 rounded-full border border-[#2B2B36] flex items-center justify-center transition-colors cursor-pointer" onclick="closeBookingModal()">✕</button>
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-full bg-[#18181F] border border-[#D4AF37]/40 flex items-center justify-center p-1.5">
+          <img alt="CODE" class="w-full h-full object-contain invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJam-vx4xlP98XE2YkB-RKLglVLYKAPHzJF-M3MkTdknBepNf4gpdY0S1NfX0y3HhTB_Eng-qdjOYZMay60KmCgMIIVfFOuC50GQSxVfNucaybJljIM0S3TO_eZdP_nZLMP_8FooUhULxTDeNyxi0nYG5VKIRGxHaCswUPADJeAC9_VLHzIUtfcQZd8f5yAi9oAPEG9lGns-SYkRnvjoGDzTHMnj_N4RSuQds19EIzIOwbfMTHzTC28A">
+        </div>
+        <div>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold block">CODE · MALAPPURAM</span>
+          <h3 class="font-serif-cormorant text-2xl text-white font-semibold" id="modalHeading">Book A Private Fitting</h3>
+        </div>
+      </div>
+      <p class="text-xs text-[#A8A49A] mb-6 leading-relaxed">
+        Enter your details below to schedule your trial session with our master wedding stylists at Kizhakkethala, Malappuram.
+      </p>
+      <form class="space-y-4" id="enquiryForm" onsubmit="handleEnquirySubmit(event)">
+        <div>
+          <label class="block text-[10px] uppercase font-bold tracking-widest text-[#C8C4B8] mb-1.5">Your Full Name *</label>
+          <input class="w-full bg-[#181820] border border-[#2D2D38] focus:border-[#D4AF37] rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none" id="formName" placeholder="e.g. Mohammed Adil" required="" type="text">
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[10px] uppercase font-bold tracking-widest text-[#C8C4B8] mb-1.5">Phone / WhatsApp *</label>
+            <input class="w-full bg-[#181820] border border-[#2D2D38] focus:border-[#D4AF37] rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none" id="formPhone" placeholder="+91 98765 43210" required="" type="tel">
+          </div>
+          <div>
+            <label class="block text-[10px] uppercase font-bold tracking-widest text-[#C8C4B8] mb-1.5">Wedding Date</label>
+            <input class="w-full bg-[#181820] border border-[#2D2D38] focus:border-[#D4AF37] rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none" id="formDate" type="date">
+          </div>
+        </div>
+        <div>
+          <label class="block text-[10px] uppercase font-bold tracking-widest text-[#C8C4B8] mb-1.5">Attire Preference</label>
+          <select class="w-full bg-[#181820] border border-[#2D2D38] focus:border-[#D4AF37] rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none" id="formAttire">
+            <option value="Bespoke Royal Ivory Tuxedo">Bespoke Royal Ivory Tuxedo</option>
+            <option value="Crystal Pinstripe Italian Tuxedo">Crystal Pinstripe Italian Tuxedo</option>
+            <option value="Bottle Green Velvet Imperial Blazer">Bottle Green Velvet Imperial Blazer</option>
+            <option value="Midnight Royal Embroidered Bandhgala">Midnight Royal Embroidered Bandhgala</option>
+            <option value="Modern Mauve Belt-Tied Suit">Modern Mauve Belt-Tied Suit</option>
+            <option value="Full Wedding Party &amp; Entourage Styling">Full Wedding Party &amp; Entourage Styling</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[10px] uppercase font-bold tracking-widest text-[#C8C4B8] mb-1.5">Additional Notes / Color Theme</label>
+          <textarea class="w-full bg-[#181820] border border-[#2D2D38] focus:border-[#D4AF37] rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none resize-none h-20" id="formNotes" placeholder="e.g. Interested in custom ivory and green velvet combinations for upcoming wedding reception."></textarea>
+        </div>
+        <div class="pt-3 flex flex-col sm:flex-row gap-3">
+          <button class="flex-1 bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] font-bold text-xs uppercase tracking-widest py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md" type="submit">
+            <span>Send Via WhatsApp</span>
+          </button>
+          <button class="bg-[#1C1C24] hover:bg-[#252530] text-white border border-[#3A3945] font-semibold text-xs uppercase tracking-wider py-3.5 px-5 rounded-lg transition-colors cursor-pointer" onclick="confirmInAppBooking()" type="button">
+            Instant Confirm
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 2: QUICK VIEW -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md px-4 hidden" id="quickViewModal">
+    <div class="relative w-full max-w-3xl bg-[#121217] border border-[#D4AF37]/50 rounded-2xl overflow-hidden shadow-2xl max-h-[92vh] flex flex-col md:flex-row">
+      <button class="absolute top-4 right-4 z-20 text-[#CFCBC0] hover:text-white text-xl font-light w-8 h-8 rounded-full bg-black/60 border border-[#3A3945] flex items-center justify-center transition-colors cursor-pointer" onclick="closeQuickViewModal()">✕</button>
+      <div class="md:w-1/2 relative bg-[#0A0A0C] min-h-[280px]">
+        <img alt="CODE Wedding Outfit" class="w-full h-full object-cover" id="quickViewImg" src="">
+      </div>
+      <div class="md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181822] border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] font-bold uppercase tracking-widest mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+            <span>CODE Signature Design</span>
+          </div>
+          <h3 class="font-serif-cormorant text-2xl sm:text-3xl font-semibold text-white mb-1" id="quickViewTitle">Outfit Title</h3>
+          <p class="text-xs text-[#D4AF37] font-medium tracking-wide mb-4" id="quickViewSubtitle">Category Detail</p>
+          <p class="text-xs sm:text-sm text-[#B7B3A8] leading-relaxed mb-5" id="quickViewDesc">Description</p>
+          <div class="p-3.5 rounded-lg bg-[#181820] border border-[#282834] space-y-2 mb-6 text-xs text-[#A8A49A]">
+            <div class="flex justify-between">
+              <span class="text-[#737068]">Fabric / Handloom:</span>
+              <span class="text-white font-medium text-right" id="quickViewFabric">Pure Silk Brocade</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-[#737068]">Fitting Service:</span>
+              <span class="text-[#D4AF37] font-medium">Bespoke Master Tailoring Included</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-[#737068]">Availability:</span>
+              <span class="text-emerald-400 font-medium">In Showroom · Varangode</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2 pt-2">
+          <button class="w-full bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] font-bold text-xs uppercase tracking-widest py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md" onclick="quickViewOrderWhatsApp()">
+            <span>Enquire This Outfit On WhatsApp</span>
+          </button>
+          <button class="w-full bg-[#181820] hover:bg-[#20202B] text-white border border-[#30303D] font-semibold text-xs uppercase tracking-wider py-2.5 rounded-lg transition-colors cursor-pointer" onclick="closeQuickViewModal(); openBookingModal('Fitting for: ' + document.getElementById('quickViewTitle').innerText)">
+            Book Fitting Session
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: SHOWROOM OPENING HOURS -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md px-4 hidden" id="hoursModal">
+    <div class="relative w-full max-w-md bg-[#131318] border border-[#D4AF37]/50 rounded-2xl p-6 sm:p-8 shadow-2xl">
+      <button class="absolute top-5 right-5 text-[#8E8A83] hover:text-white text-2xl font-light w-8 h-8 rounded-full border border-[#2B2B36] flex items-center justify-center transition-colors cursor-pointer" onclick="toggleHoursModal()">✕</button>
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#10B981] animate-ping"></span>
+        <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#D4AF37]">Open Every Day</span>
+      </div>
+      <h3 class="font-serif-cormorant text-2xl font-semibold text-white mb-2">Showroom Opening Hours</h3>
+      <p class="text-xs text-[#9E9A90] mb-5">
+        CODE Gents Wedding Collection showroom in Varangode, Kizhakkethala, Malappuram is open seven days a week:
+      </p>
+      <div class="divide-y divide-[#202028] border-y border-[#202028] text-xs">
+        <div class="py-2.5 flex justify-between"><span class="text-[#D8D4CA]">Monday</span><span class="text-white font-semibold">9:30 AM – 10:00 PM</span></div>
+        <div class="py-2.5 flex justify-between"><span class="text-[#D8D4CA]">Tuesday</span><span class="text-white font-semibold">9:30 AM – 10:00 PM</span></div>
+        <div class="py-2.5 flex justify-between"><span class="text-[#D8D4CA]">Wednesday</span><span class="text-white font-semibold">9:30 AM – 10:00 PM</span></div>
+        <div class="py-2.5 flex justify-between"><span class="text-[#D8D4CA]">Thursday</span><span class="text-white font-semibold">9:30 AM – 10:00 PM</span></div>
+        <div class="py-2.5 flex justify-between"><span class="text-[#D8D4CA]">Friday</span><span class="text-white font-semibold">9:30 AM – 10:00 PM</span></div>
+        <div class="py-2.5 flex justify-between"><span class="text-[#D8D4CA]">Saturday</span><span class="text-white font-semibold">9:30 AM – 10:00 PM</span></div>
+        <div class="py-2.5 flex justify-between bg-[#191922] px-2 rounded"><span class="text-[#D4AF37] font-semibold">Sunday</span><span class="text-[#D4AF37] font-bold">9:30 AM – 10:00 PM</span></div>
+      </div>
+      <div class="mt-6 flex flex-col gap-2">
+        <a class="w-full text-center bg-[#D4AF37] hover:bg-[#E5C14F] text-[#0A0A0C] font-bold text-xs uppercase tracking-widest py-3 rounded transition-colors" href="https://maps.app.goo.gl/5ZiDKazXhcSFMwcu9" rel="noopener noreferrer" target="_blank">
+          Navigate to Showroom on Maps ↗
+        </a>
+        <button class="w-full bg-[#181820] hover:bg-[#20202A] text-white text-xs font-semibold uppercase tracking-wider py-2.5 rounded transition-colors cursor-pointer" onclick="toggleHoursModal()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: INTERACTIVE "FIND YOUR WEDDING LOOK" STYLE QUIZ -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md px-4 hidden" id="quizModal">
+    <div class="relative w-full max-w-lg bg-[#131319] border border-[#D4AF37]/50 rounded-2xl p-6 sm:p-8 shadow-2xl max-h-[92vh] overflow-y-auto">
+      <button class="absolute top-5 right-5 text-[#8E8A83] hover:text-white text-2xl font-light w-8 h-8 rounded-full border border-[#2B2B36] flex items-center justify-center transition-colors cursor-pointer" onclick="closeQuizModal()">✕</button>
+      
+      <div class="mb-6">
+        <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#D4AF37] block mb-1">Groom Style Matcher</span>
+        <h3 class="font-serif-cormorant text-2xl sm:text-3xl font-bold text-white">Find Your Signature Wedding Look</h3>
+        <p class="text-xs text-[#9E9A90] mt-1">Answer 3 quick questions to discover which CODE collection best fits your personality.</p>
+      </div>
+
+      <!-- Step 1: Occasion -->
+      <div id="quizStep1" class="space-y-4">
+        <div class="text-xs uppercase font-bold tracking-wider text-[#D4AF37]">Step 1: What is the main wedding event?</div>
+        <div class="grid grid-cols-2 gap-3">
+          <button onclick="setQuizAnswer('event', 'Nikah Ceremony', 2)" class="p-4 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all cursor-pointer group">
+            <span class="text-xl block mb-1">🕌</span>
+            <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Nikah Ceremony</span>
+            <span class="text-[10px] text-[#888]">Traditional, Regal, Dignified</span>
+          </button>
+          <button onclick="setQuizAnswer('event', 'Grand Reception', 2)" class="p-4 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all cursor-pointer group">
+            <span class="text-xl block mb-1">🍸</span>
+            <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Grand Reception</span>
+            <span class="text-[10px] text-[#888]">Evening Tuxedo, High Fashion</span>
+          </button>
+          <button onclick="setQuizAnswer('event', 'Haldi & Mehendi', 2)" class="p-4 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all cursor-pointer group">
+            <span class="text-xl block mb-1">🌸</span>
+            <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Haldi / Mehendi</span>
+            <span class="text-[10px] text-[#888]">Pastel Kurta, Festive Silk</span>
+          </button>
+          <button onclick="setQuizAnswer('event', 'Sangeet & Party', 2)" class="p-4 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all cursor-pointer group">
+            <span class="text-xl block mb-1">✨</span>
+            <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Sangeet / Party</span>
+            <span class="text-[10px] text-[#888]">Indo-Western, Velvet, Modern</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: Preferred Silhouette -->
+      <div id="quizStep2" class="space-y-4 hidden">
+        <div class="text-xs uppercase font-bold tracking-wider text-[#D4AF37]">Step 2: What silhouette reflects your vibe?</div>
+        <div class="space-y-2.5">
+          <button onclick="setQuizAnswer('style', 'Bespoke Tuxedo with Crystal Lapels', 3)" class="w-full p-3.5 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all flex items-center justify-between group">
+            <div>
+              <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Sharp Crystal Tuxedo</span>
+              <span class="text-[11px] text-[#888]">Black or Ivory with Italian lapels &amp; bow tie</span>
+            </div>
+            <span class="text-[#D4AF37]">→</span>
+          </button>
+          <button onclick="setQuizAnswer('style', 'Regal Hand-Embroidered Sherwani', 3)" class="w-full p-3.5 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all flex items-center justify-between group">
+            <div>
+              <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Royal Embroidered Sherwani</span>
+              <span class="text-[11px] text-[#888]">Zardozi micro needlework on pure raw silk</span>
+            </div>
+            <span class="text-[#D4AF37]">→</span>
+          </button>
+          <button onclick="setQuizAnswer('style', 'Emerald Velvet Double-Breasted Suit', 3)" class="w-full p-3.5 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all flex items-center justify-between group">
+            <div>
+              <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Lush Velvet Occasion Blazer</span>
+              <span class="text-[11px] text-[#888]">Deep Bottle Green with mother-of-pearl buttons</span>
+            </div>
+            <span class="text-[#D4AF37]">→</span>
+          </button>
+          <button onclick="setQuizAnswer('style', 'Avant-Garde Mauve Belted Suit', 3)" class="w-full p-3.5 rounded-xl bg-[#191924] border border-[#2B2B3A] hover:border-[#D4AF37] text-left transition-all flex items-center justify-between group">
+            <div>
+              <span class="text-sm font-semibold text-white group-hover:text-[#D4AF37] block">Contemporary Belted Designer Suit</span>
+              <span class="text-[11px] text-[#888]">Modern sash closure with relaxed Italian drape</span>
+            </div>
+            <span class="text-[#D4AF37]">→</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Result & WhatsApp Recommendation -->
+      <div id="quizStep3" class="space-y-4 hidden">
+        <div class="p-5 rounded-xl bg-[#181822] border border-[#D4AF37] text-center">
+          <div class="w-12 h-12 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] flex items-center justify-center mx-auto mb-3 text-[#D4AF37] text-xl">✦</div>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold block mb-1">Your Recommended Match</span>
+          <h4 class="font-serif-cormorant text-2xl text-white font-bold" id="quizMatchTitle">Royal Ivory Embroidered Tuxedo</h4>
+          <p class="text-xs text-[#B2AEA5] mt-2" id="quizMatchDesc">Ideal for your Grand Reception with bespoke master fittings available at Varangode.</p>
+        </div>
+
+        <div class="space-y-2 pt-2">
+          <button onclick="sendQuizResultWhatsApp()" class="w-full bg-[#D4AF37] hover:bg-[#E5C14F] text-black font-bold text-xs uppercase tracking-widest py-3.5 rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md">
+            <span>Enquire This Look on WhatsApp</span>
+            <span>→</span>
+          </button>
+          <button onclick="resetQuiz()" class="w-full bg-[#181822] text-[#8E8A80] hover:text-white text-xs uppercase tracking-wider py-2.5 rounded transition-colors cursor-pointer">
+            Retake Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 5: BUSINESS ROI & OWNER PITCH MODAL (SECRET WEAPON FOR CLIENT ACQUISITION) -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md px-4 hidden" id="pitchModal">
+    <div class="relative w-full max-w-2xl bg-[#121218] border-2 border-[#D4AF37] rounded-2xl p-6 sm:p-9 shadow-2xl max-h-[92vh] overflow-y-auto">
+      <button class="absolute top-5 right-5 text-[#8E8A83] hover:text-white text-2xl font-light w-8 h-8 rounded-full border border-[#2B2B36] flex items-center justify-center transition-colors cursor-pointer" onclick="closePitchModal()">✕</button>
+
+      <div class="border-b border-[#252532] pb-5 mb-6">
+        <span class="px-2.5 py-1 rounded bg-[#D4AF37] text-black text-[10px] font-bold tracking-widest uppercase inline-block mb-2">PROPRIETARY PROPOSAL</span>
+        <h3 class="font-serif-cormorant text-2xl sm:text-3xl font-bold text-white">Why CODE Needs This Digital Platform</h3>
+        <p class="text-xs text-[#A9A59C] mt-1">Exclusive presentation for the Owners &amp; Leadership of CODE Gents Wedding Collection, Malappuram.</p>
+      </div>
+
+      <!-- 4 Core Business Drivers -->
+      <div class="space-y-4 mb-6">
+        <div class="p-4 rounded-xl bg-[#161622] border border-[#282838] flex items-start gap-3.5">
+          <div class="w-8 h-8 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] flex items-center justify-center shrink-0 font-bold text-sm">1</div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Capture the High-Value Gulf / NRI Groom Market</h4>
+            <p class="text-xs text-[#9E9A90] mt-1 leading-relaxed">
+              Every month, dozens of Malappuram grooms working in UAE, Saudi Arabia, and Qatar search online for wedding attire before landing in Kerala. Without a website, they book appointments with competitors in Kozhikode or Kochi. With this portal, they browse your catalog &amp; book fittings weeks before their flight.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#161622] border border-[#282838] flex items-start gap-3.5">
+          <div class="w-8 h-8 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] flex items-center justify-center shrink-0 font-bold text-sm">2</div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Dominate Bulk Entourage Orders (₹50k - ₹1.5L Ticket Size)</h4>
+            <p class="text-xs text-[#9E9A90] mt-1 leading-relaxed">
+              The built-in <strong class="text-white">Entourage Package Builder</strong> enables grooms to calculate and order matching outfits for 4 to 12 groomsmen in one click. A single entourage sale generates ₹50,000 to ₹1,50,000+ in revenue.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#161622] border border-[#282838] flex items-start gap-3.5">
+          <div class="w-8 h-8 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] flex items-center justify-center shrink-0 font-bold text-sm">3</div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Direct WhatsApp Sales Channel (Zero Commission)</h4>
+            <p class="text-xs text-[#9E9A90] mt-1 leading-relaxed">
+              Unlike third-party platforms that charge 15-25% commissions, all customer inquiries, custom photos, and fitting requests flow directly to your store's WhatsApp number <strong class="text-[#D4AF37]">(+91 79079 39090)</strong> with pre-filled outfit details.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-[#161622] border border-[#282838] flex items-start gap-3.5">
+          <div class="w-8 h-8 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] flex items-center justify-center shrink-0 font-bold text-sm">4</div>
+          <div>
+            <h4 class="text-sm font-bold text-white">Dominance on Google Search for Malappuram Groom Wear</h4>
+            <p class="text-xs text-[#9E9A90] mt-1 leading-relaxed">
+              When someone searches "best groom sherwani in Malappuram" or "wedding suit shop near me", CODE's official website will rank on Page 1 with direct GPS directions to your Varangode store.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROI Calculator Preview -->
+      <div class="p-5 rounded-xl bg-gradient-to-r from-[#1E1B12] to-[#14141E] border border-[#D4AF37]/60 mb-6">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-[#D4AF37] mb-2">Live Return On Investment (ROI)</h4>
+        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="p-2 bg-black/40 rounded">
+            <span class="text-[10px] text-[#888] block">Just 2 Extra Grooms/Mo</span>
+            <span class="font-bold text-white text-sm">+₹45,000</span>
+          </div>
+          <div class="p-2 bg-black/40 rounded">
+            <span class="text-[10px] text-[#888] block">1 Extra Entourage/Mo</span>
+            <span class="font-bold text-[#D4AF37] text-sm">+₹65,000</span>
+          </div>
+          <div class="p-2 bg-black/40 rounded">
+            <span class="text-[10px] text-[#888] block">Annual New Revenue</span>
+            <span class="font-bold text-emerald-400 text-sm">₹10 Lakhs+</span>
+          </div>
+        </div>
+        <p class="text-[11px] text-[#B0ABA0] mt-3 text-center">
+          The entire website pays for itself in less than 2 weeks with just ONE additional wedding party order!
+        </p>
+      </div>
+
+      <!-- Action Button -->
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/917907939090?text=Hi%20CODE%20Team%2C%20I%20have%20developed%20the%20official%20digital%20website%20prototype%20for%20CODE%20Gents%20Wedding%20Collection%20and%20would%20like%20to%20discuss%20launching%20it." target="_blank" rel="noopener noreferrer" class="flex-1 bg-[#D4AF37] hover:bg-[#E5C14F] text-black font-bold text-xs uppercase tracking-widest py-3.5 rounded-lg text-center transition-all shadow-md">
+          Connect With Leadership On WhatsApp
+        </a>
+        <button onclick="closePitchModal()" class="px-6 py-3.5 bg-[#1B1B24] text-white hover:bg-[#252532] text-xs font-bold uppercase tracking-wider rounded-lg transition-colors cursor-pointer">
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-md bg-[#131319] border border-[#D4AF37] text-white p-4 rounded-xl shadow-2xl flex items-center justify-between gap-3 transform translate-y-32 opacity-0 pointer-events-none transition-all duration-300" id="toastNotification">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-[#D4AF37] text-black flex items-center justify-center font-bold text-sm shrink-0">✓</div>
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white" id="toastTitle">Lookbook Requested</h4>
+        <p class="text-[11px] text-[#A6A299]" id="toastMessage">Opening official WhatsApp catalogue chat now...</p>
+      </div>
+    </div>
+    <button class="text-xs text-[#8E8A83] hover:text-white px-2 py-1 rounded cursor-pointer" onclick="hideToast()">✕</button>
+  </div>
+
+  <!-- CELEBRATORY CONFIRMATION DIALOG -->
+  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md px-4 hidden" id="confirmDialog">
+    <div class="relative w-full max-w-sm bg-[#121217] border border-[#D4AF37] rounded-2xl p-7 text-center shadow-2xl">
+      <div class="w-16 h-16 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] flex items-center justify-center mx-auto mb-4 text-[#D4AF37] text-2xl">✦</div>
+      <span class="text-[10px] uppercase font-bold tracking-[0.25em] text-[#D4AF37] block mb-1">Appointment Confirmed</span>
+      <h3 class="font-serif-cormorant text-2xl font-bold text-white mb-2">We Look Forward to Welcoming You!</h3>
+      <p class="text-xs text-[#B0ACA2] leading-relaxed mb-6" id="confirmDialogText">
+        Your private fitting consultation has been logged with CODE Gents Wedding Collection stylists at Varangode, Malappuram.
+      </p>
+      <div class="space-y-2">
+        <button class="w-full bg-[#D4AF37] hover:bg-[#E5C14F] text-black font-bold text-xs uppercase tracking-widest py-3 rounded transition-colors cursor-pointer" onclick="closeConfirmDialog()">Done</button>
+        <button class="w-full bg-[#1A1A22] text-[#D4AF37] font-semibold text-xs uppercase tracking-wider py-2.5 rounded transition-colors cursor-pointer" onclick="openWhatsApp('Hi CODE, I just booked a fitting session and would like to confirm dates.')">Message Us on WhatsApp ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT CONTROLLERS -->
+  <script>
+    let currentOutfitTitle = "The Grand Entourage & Wedding Party";
+    let selectedTheme = "Ivory & Gold";
+    let quizAnswers = { event: '', style: '' };
+
+    // Smooth Scroll
+    function scrollToSection(id, event) {
+      if (event) event.preventDefault();
+      const el = document.getElementById(id);
+      if (el) {
+        const offset = 80;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = el.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    // Live Store Open/Closed Status Clock (Real-time check)
+    function checkStoreStatus() {
+      const now = new Date();
+      // Kerala / IST time offset
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const totalMinutes = hours * 60 + minutes;
+
+      const openMinutes = 9 * 60 + 30; // 9:30 AM
+      const closeMinutes = 22 * 60;    // 10:00 PM
+
+      const dot = document.getElementById('liveStatusDot');
+      const text = document.getElementById('liveStatusText');
+
+      if (totalMinutes >= openMinutes && totalMinutes < closeMinutes) {
+        if (dot) {
+          dot.className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
+        }
+        if (text) {
+          text.innerText = "Open Now · 9:30 AM – 10:00 PM";
+        }
+      } else {
+        if (dot) {
+          dot.className = "w-2 h-2 rounded-full bg-amber-400";
+        }
+        if (text) {
+          text.innerText = "Closed · Opens Tomorrow 9:30 AM";
+        }
+      }
+    }
+    checkStoreStatus();
+
+    // Modals
+    function toggleHoursModal() {
+      const modal = document.getElementById('hoursModal');
+      if (modal) modal.classList.toggle('hidden');
+    }
+
+    function openBookingModal(heading) {
+      const modal = document.getElementById('bookingModal');
+      const headingElem = document.getElementById('modalHeading');
+      if (heading && headingElem) {
+        headingElem.innerText = heading;
+      }
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('bookingModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function openQuickView(title, subtitle, desc, fabric, imgSrc) {
+      currentOutfitTitle = title;
+      document.getElementById('quickViewTitle').innerText = title;
+      document.getElementById('quickViewSubtitle').innerText = subtitle;
+      document.getElementById('quickViewDesc').innerText = desc;
+      document.getElementById('quickViewFabric').innerText = fabric;
+      document.getElementById('quickViewImg').src = imgSrc;
+      document.getElementById('quickViewModal').classList.remove('hidden');
+    }
+
+    function closeQuickViewModal() {
+      const modal = document.getElementById('quickViewModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function openPitchModal() {
+      const modal = document.getElementById('pitchModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closePitchModal() {
+      const modal = document.getElementById('pitchModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function openQuizModal() {
+      resetQuiz();
+      const modal = document.getElementById('quizModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeQuizModal() {
+      const modal = document.getElementById('quizModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    // Quiz Wizard Logic
+    function setQuizAnswer(key, value, nextStep) {
+      quizAnswers[key] = value;
+      document.getElementById('quizStep1').classList.add('hidden');
+      document.getElementById('quizStep2').classList.add('hidden');
+      document.getElementById('quizStep3').classList.add('hidden');
+
+      if (nextStep === 2) {
+        document.getElementById('quizStep2').classList.remove('hidden');
+      } else if (nextStep === 3) {
+        // Evaluate recommendation
+        let matchTitle = "Royal Ivory Embroidered Tuxedo";
+        let matchDesc = "Hand-embroidered zardozi jacket with matching tailored pants, pristine for grand Malappuram wedding receptions.";
+
+        if (quizAnswers.style.includes('Crystal')) {
+          matchTitle = "Crystal Pinstripe Italian Tuxedo";
+          matchDesc = "Hand-beaded crystal lapels with a 3-piece tailored waistcoat, ideal for modern evening receptions.";
+        } else if (quizAnswers.style.includes('Sherwani')) {
+          matchTitle = "Midnight Royal Embroidered Bandhgala";
+          matchDesc = "Tonal micro floral shoulder embroidery on pure raw silk, quintessential for traditional Nikah ceremonies.";
+        } else if (quizAnswers.style.includes('Velvet')) {
+          matchTitle = "Bottle Green Velvet Imperial Blazer";
+          matchDesc = "Double-breasted bottle green Italian velvet paired with flare ivory trousers for regal Sangeet nights.";
+        } else if (quizAnswers.style.includes('Belted')) {
+          matchTitle = "Modern Mauve Belt-Tied Designer Suit";
+          matchDesc = "Contemporary belted sash closure for forward-thinking grooms who want an avant-garde spotlight.";
+        }
+
+        document.getElementById('quizMatchTitle').innerText = matchTitle;
+        document.getElementById('quizMatchDesc').innerText = `${matchDesc} Tailored for your ${quizAnswers.event}.`;
+        document.getElementById('quizStep3').classList.remove('hidden');
+      }
+    }
+
+    function resetQuiz() {
+      quizAnswers = { event: '', style: '' };
+      document.getElementById('quizStep1').classList.remove('hidden');
+      document.getElementById('quizStep2').classList.add('hidden');
+      document.getElementById('quizStep3').classList.add('hidden');
+    }
+
+    function sendQuizResultWhatsApp() {
+      const title = document.getElementById('quizMatchTitle').innerText;
+      const msg = `Hello CODE Gents Wedding Collection! I took the Style Matcher quiz on your website.\nEvent: ${quizAnswers.event}\nRecommended Style: ${title}\nCan I book a trial at Varangode?`;
+      closeQuizModal();
+      openWhatsApp(msg);
+    }
+
+    // Entourage Calculator Logic
+    function updateEntourageCalculator() {
+      const groomSelect = document.getElementById('calcGroomStyle');
+      const groomOption = groomSelect.options[groomSelect.selectedIndex];
+      const groomPrice = parseInt(groomOption.getAttribute('data-price')) || 24500;
+      const groomName = groomOption.text.split(' (')[0];
+
+      const groomsmenCount = parseInt(document.getElementById('calcGroomsmenRange').value) || 0;
+      document.getElementById('calcGroomsmenCountText').innerText = groomsmenCount === 0 ? "0 (Just Groom)" : `${groomsmenCount} Groomsmen`;
+
+      const entourageSelect = document.getElementById('calcEntourageStyle');
+      const entourageOption = entourageSelect.options[entourageSelect.selectedIndex];
+      const entouragePrice = parseInt(entourageOption.getAttribute('data-price')) || 6500;
+      const entourageName = entourageOption.text.split(' (')[0];
+
+      // Calculation with 10% entourage discount if 4+ groomsmen
+      let total = groomPrice + (groomsmenCount * entouragePrice);
+      if (groomsmenCount >= 4) {
+        total = Math.round(total * 0.92); // 8% bulk discount
+      }
+
+      document.getElementById('summaryGroomStyle').innerText = groomName;
+      document.getElementById('summaryEntourageCount').innerText = groomsmenCount === 0 ? "Groom Only" : `${groomsmenCount} Members`;
+      document.getElementById('summaryEntourageStyle').innerText = entourageName;
+      document.getElementById('summaryTheme').innerText = selectedTheme;
+      document.getElementById('summaryTotal').innerText = "₹" + total.toLocaleString('en-IN');
+    }
+
+    function selectThemeColor(themeName, btn) {
+      selectedTheme = themeName;
+      document.querySelectorAll('.theme-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-[#D4AF37]', 'text-white');
+        b.classList.add('border', 'border-[#2F2F3D]', 'text-[#A6A299]');
+      });
+      btn.classList.add('border-2', 'border-[#D4AF37]', 'text-white');
+      btn.classList.remove('border-[#2F2F3D]', 'text-[#A6A299]');
+      document.getElementById('summaryTheme').innerText = themeName;
+    }
+
+    function sendEntourageQuoteWhatsApp() {
+      const groom = document.getElementById('summaryGroomStyle').innerText;
+      const count = document.getElementById('summaryEntourageCount').innerText;
+      const style = document.getElementById('summaryEntourageStyle').innerText;
+      const theme = document.getElementById('summaryTheme').innerText;
+      const est = document.getElementById('summaryTotal').innerText;
+
+      const msg = `*Wedding Entourage Enquiry - CODE Malappuram*\n• Groom Attire: ${groom}\n• Entourage Size: ${count}\n• Entourage Style: ${style}\n• Color Theme: ${theme}\n• Estimated Total: ${est}\n\nPlease share booking procedure and trial schedule at Varangode showroom.`;
+      openWhatsApp(msg);
+    }
+
+    // Quick View WhatsApp Enquiry
+    function quickViewOrderWhatsApp() {
+      const msg = `Hello CODE Gents Wedding Collection, I would like to enquire about: ${currentOutfitTitle}. Can you share pricing and trial availability at Varangode?`;
+      openWhatsApp(msg);
+    }
+
+    // WhatsApp Universal Link
+    function openWhatsApp(customText) {
+      const phone = "917907939090";
+      const text = encodeURIComponent(customText || "Hello CODE Gents Wedding Collection, I would like to consult about groom wear.");
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    }
+
+    // Accordions
+    function toggleAccordion(elem) {
+      const isActive = elem.classList.contains('active');
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      if (!isActive) {
+        elem.classList.add('active');
+      }
+    }
+
+    // Filter Collections
+    function filterCollection(category, btnElem) {
+      if (btnElem) {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active-tab');
+          btn.classList.add('bg-[#131317]', 'text-[#A6A299]');
+        });
+        btnElem.classList.add('active-tab');
+        btnElem.classList.remove('bg-[#131317]', 'text-[#A6A299]');
+      }
+
+      const items = document.querySelectorAll('.collection-item');
+      items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category || itemCategory === 'all') {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Toast
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      if (toast) {
+        document.getElementById('toastTitle').innerText = title;
+        document.getElementById('toastMessage').innerText = message;
+        toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+        setTimeout(hideToast, 4000);
+      }
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('toastNotification');
+      if (toast) {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      }
+    }
+
+    function requestLookbook() {
+      showToast("Lookbook Requested", "Connecting to WhatsApp catalogue for CODE Wedding Collections...");
+      setTimeout(() => {
+        openWhatsApp("Hello CODE, please share your complete groom & wedding lookbook PDF.");
+      }, 1000);
+    }
+
+    // Enquiry Form Handlers
+    function handleEnquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('formName').value;
+      const phone = document.getElementById('formPhone').value;
+      const date = document.getElementById('formDate').value;
+      const attire = document.getElementById('formAttire').value;
+      const notes = document.getElementById('formNotes').value;
+
+      closeBookingModal();
+      const msg = `*New Groom Fitting Booking*\nName: ${name}\nPhone: ${phone}\nWedding Date: ${date || 'Not specified'}\nAttire: ${attire}\nNotes: ${notes || 'None'}`;
+      openWhatsApp(msg);
+    }
+
+    function confirmInAppBooking() {
+      const name = document.getElementById('formName').value || "Guest";
+      closeBookingModal();
+      const dialog = document.getElementById('confirmDialog');
+      const dialogText = document.getElementById('confirmDialogText');
+      if (dialogText) {
+        dialogText.innerText = `Thank you ${name}! Your private fitting request has been recorded. Our master stylist will contact you shortly to confirm your slot at Varangode, Malappuram.`;
+      }
+      if (dialog) dialog.classList.remove('hidden');
+    }
+
+    function closeConfirmDialog() {
+      const dialog = document.getElementById('confirmDialog');
+      if (dialog) dialog.classList.add('hidden');
+    }
+
+    // Dismiss Modals on Outside Click
+    window.addEventListener('click', function(e) {
+      const booking = document.getElementById('bookingModal');
+      const quickView = document.getElementById('quickViewModal');
+      const hours = document.getElementById('hoursModal');
+      const quiz = document.getElementById('quizModal');
+      const pitch = document.getElementById('pitchModal');
+      const confirmD = document.getElementById('confirmDialog');
+
+      if (e.target === booking) closeBookingModal();
+      if (e.target === quickView) closeQuickViewModal();
+      if (e.target === hours) toggleHoursModal();
+      if (e.target === quiz) closeQuizModal();
+      if (e.target === pitch) closePitchModal();
+      if (e.target === confirmD) closeConfirmDialog();
+    });
+  </script>
+</body>
+</html>
